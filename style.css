@@ -1,0 +1,3064 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+.quickGreen {
+  color: lime !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+
+* img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+* a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  background: white;
+}
+
+.main.targetShot {
+  position: absolute;
+}
+
+.purple {
+  color: #561176 !important;
+}
+
+body {
+  width: auto;
+  height: 100vh;
+  background: none;
+  background-attachment: fixed;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-image: url("./customPhotos/mainbkrnd.png");
+  overflow: visible;
+  position: relative;
+}
+
+body menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+  width: 100vw;
+  height: 2rem;
+  position: relative;
+}
+
+body menu .mainUL {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: inherit;
+  list-style: none;
+  overflow: visible;
+  z-index: -100;
+}
+
+body menu .mainUL * {
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+}
+
+body menu .mainUL li {
+  overflow: hidden;
+  height: auto;
+  min-width: 10%;
+  width: auto;
+  color: black;
+  font-size: 1.25vw !important;
+  cursor: pointer;
+  color: white;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  background: rgba(157, 39, 212, 0.267);
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+}
+
+body menu .mainUL li:hover {
+  color: lime;
+  background: #6f1a96;
+}
+
+body menu .mainUL li:hover a {
+  color: lime;
+  padding-top: 2.5vw !important;
+  padding-bottom: 1.25vw;
+}
+
+body menu .mainUL li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.25vw;
+  padding-top: 2.25vw !important;
+  padding-bottom: 1vw;
+  position: relative;
+}
+
+body menu .mainUL li a img {
+  margin-top: .6vw;
+  width: 35%;
+}
+
+body menu .mainUL li .coin {
+  min-width: 5% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body menu .mainUL li .coin img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  width: 3vw;
+}
+
+body menu .mainUL li .coin:hover img {
+  width: 3.25vw;
+}
+
+body menu .mainUL .paddingfx {
+  min-width: 5%;
+}
+
+body .outWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: auto;
+  min-width: 100vw;
+  height: 100vw;
+  -webkit-transform: rotate(-90deg) translateX(-100vh);
+          transform: rotate(-90deg) translateX(-100vh);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  overflow-Y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+body .outWrap .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100vh;
+  width: 500vw;
+  -webkit-transform: rotate(90deg) translateY(-100vh);
+          transform: rotate(90deg) translateY(-100vh);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  position: relative;
+  cursor: none;
+}
+
+body .outWrap .wrapper * {
+  font-family: 'Press Start 2P', cursive;
+}
+
+body .outWrap .wrapper header {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+  color: white;
+  text-align: center;
+  padding-top: 3vw;
+}
+
+body .outWrap .wrapper header .logoContainerAnimator {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-name: dropIn;
+          animation-name: dropIn;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  margin: 4.65vw 0vw;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  opacity: 1;
+}
+
+body .outWrap .wrapper header .logoContainerAnimator #mainLogo {
+  position: relative;
+  -webkit-perspective: 200rem;
+          perspective: 200rem;
+  border: 0.25vw solid #9d27d4;
+  border-radius: 50%;
+  position: relative !important;
+  width: 5vw;
+  -webkit-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-animation-name: worldMovement;
+          animation-name: worldMovement;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body .outWrap .wrapper header .logoContainerAnimator p {
+  position: relative;
+  margin: 0px 16%;
+  margin-left: 8%;
+  font-size: 1.25vw;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  -webkit-transform: rotateY("0deg");
+          transform: rotateY("0deg");
+}
+
+body .outWrap .wrapper header h6 {
+  position: relative;
+  border-radius: .25rem;
+  padding-bottom: .5rem;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  opacity: 1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: dropinTandom;
+          animation-name: dropinTandom;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  font-size: 1.75vw;
+  line-height: 2.5rem;
+}
+
+body .outWrap .wrapper header h6 span {
+  font-size: 1.75vw;
+}
+
+body .outWrap .wrapper header h6 .keyword {
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+body .outWrap .wrapper header h6 .arrowOne {
+  -webkit-animation-name: lightUpper;
+          animation-name: lightUpper;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .outWrap .wrapper header h6 .arrowTwo {
+  -webkit-animation-name: lightUpper;
+          animation-name: lightUpper;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: .33s;
+          animation-delay: .33s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .outWrap .wrapper header h6 .arrowThree {
+  -webkit-animation-name: lightUpper;
+          animation-name: lightUpper;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: .66s;
+          animation-delay: .66s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .outWrap .wrapper header h2 {
+  opacity: 1;
+  position: relative;
+  font-size: 4.5vw;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: dropinTandom;
+          animation-name: dropinTandom;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  line-height: 3rem;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+body .outWrap .wrapper header h2 .bubbly-animate {
+  font-size: 2.5vw;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: bubbleUp;
+          animation-name: bubbleUp;
+  -webkit-animation-duration: 0s;
+          animation-duration: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+body .outWrap .wrapper header h2 .bubbly-animate span {
+  font-size: 2.5vw;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: bubbleUp3;
+          animation-name: bubbleUp3;
+  -webkit-animation-duration: 0s;
+          animation-duration: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  margin-right: 0rem;
+}
+
+body .outWrap .wrapper header h2 .bubbly-animate .purple.keyword {
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  font-size: 2.5vw;
+}
+
+body .outWrap .wrapper header h2 span {
+  font-size: 2.5vw;
+}
+
+body .outWrap .wrapper header .world, body .outWrap .wrapper header .worldClouds {
+  height: 100vh;
+  position: absolute;
+  left: -15%;
+  top: 0;
+  z-index: -100;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: worldMovement;
+          animation-name: worldMovement;
+  animation-duration: 10s;
+}
+
+body .outWrap .wrapper header .worldClouds {
+  -webkit-animation-name: cloudMovement;
+          animation-name: cloudMovement;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  opacity: .2;
+  z-index: 7;
+}
+
+body .outWrap .wrapper header #bullet {
+  display: none;
+  height: .25rem;
+  width: 1.75rem;
+  position: absolute;
+  z-index: 6;
+  top: 45%;
+  left: 7.75%;
+  background: #4ac21b;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 2vw 0.5vw rgba(0, 0, 0, 0.438);
+          box-shadow: 0 2vw 0.5vw rgba(0, 0, 0, 0.438);
+}
+
+body .outWrap .wrapper header .stars {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: xMovement;
+          animation-name: xMovement;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+}
+
+body .outWrap .wrapper header #spaceX {
+  height: 6rem;
+  width: 7.75rem;
+  position: absolute;
+  top: 45%;
+  left: 7.75%;
+  z-index: 6;
+  -webkit-transition: all ease-out .1s;
+  transition: all ease-out .1s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: xMovement !important;
+          animation-name: xMovement !important;
+  -webkit-animation-duration: 2s !important;
+          animation-duration: 2s !important;
+  animation-iteration-count: infinite !important;
+  margin-top: .25%;
+}
+
+body .outWrap .wrapper header .f1 {
+  height: 6rem;
+  width: 7rem;
+  position: absolute;
+  top: 45%;
+  left: 7.75%;
+  -webkit-transition: all ease-out .1s;
+  transition: all ease-out .1s;
+  z-index: 6;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: flameEff !important;
+          animation-name: flameEff !important;
+  -webkit-animation-duration: .75s !important;
+          animation-duration: .75s !important;
+  animation-iteration-count: infinite !important;
+  margin-top: .25%;
+}
+
+body .outWrap .wrapper header .f2 {
+  height: 6rem;
+  width: 7rem;
+  position: absolute;
+  top: 45%;
+  left: 7.75%;
+  -webkit-transition: all ease-out .1s;
+  transition: all ease-out .1s;
+  z-index: 6;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: flameEff2 !important;
+          animation-name: flameEff2 !important;
+  -webkit-animation-duration: .75s !important;
+          animation-duration: .75s !important;
+  animation-iteration-count: infinite !important;
+  margin-top: .25%;
+}
+
+body .outWrap .wrapper section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+body .outWrap .wrapper section .stars {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  -webkit-animation-name: worldMovement;
+          animation-name: worldMovement;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+body .outWrap .wrapper section .moon_spin {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  position: absolute;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: xMovement;
+          animation-name: xMovement;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  border-radius: 50%;
+  width: 20%;
+  margin-left: -2.75%;
+  z-index: -100 !important;
+}
+
+body .outWrap .wrapper section .asteroids {
+  opacity: 1;
+  position: absolute;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: worldMovement;
+          animation-name: worldMovement;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  border-radius: 50%;
+}
+
+body .outWrap .wrapper section .asteroids.one {
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+body .outWrap .wrapper section .asteroids.two {
+  -webkit-animation-name: worldMovement;
+          animation-name: worldMovement;
+}
+
+body .outWrap .wrapper section .asteroids.three {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+body .outWrap .wrapper #followWrapper2, body .outWrap .wrapper #followWrapper3, body .outWrap .wrapper #followWrapper3, body .outWrap .wrapper #followWrapper4, body .outWrap .wrapper #followWrapper5 {
+  padding-top: 2vw;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .outWrap .wrapper #followWrapper2 .mars, body .outWrap .wrapper #followWrapper3 .mars, body .outWrap .wrapper #followWrapper3 .mars, body .outWrap .wrapper #followWrapper4 .mars, body .outWrap .wrapper #followWrapper5 .mars {
+  position: absolute;
+  -webkit-animation-name: xMovement;
+          animation-name: xMovement;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  border-radius: 50%;
+  width: 20%;
+  z-index: -100;
+}
+
+body .outWrap .wrapper #followWrapper2 h1, body .outWrap .wrapper #followWrapper2 h2, body .outWrap .wrapper #followWrapper3 h1, body .outWrap .wrapper #followWrapper3 h2, body .outWrap .wrapper #followWrapper3 h1, body .outWrap .wrapper #followWrapper3 h2, body .outWrap .wrapper #followWrapper4 h1, body .outWrap .wrapper #followWrapper4 h2, body .outWrap .wrapper #followWrapper5 h1, body .outWrap .wrapper #followWrapper5 h2 {
+  font-size: 2vw;
+  text-shadow: 0 0 2rem black;
+}
+
+body .outWrap .wrapper #followWrapper2 .row, body .outWrap .wrapper #followWrapper3 .row, body .outWrap .wrapper #followWrapper3 .row, body .outWrap .wrapper #followWrapper4 .row, body .outWrap .wrapper #followWrapper5 .row {
+  width: 100%;
+  height: auto !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .outWrap .wrapper #followWrapper2 .row .marsp, body .outWrap .wrapper #followWrapper3 .row .marsp, body .outWrap .wrapper #followWrapper3 .row .marsp, body .outWrap .wrapper #followWrapper4 .row .marsp, body .outWrap .wrapper #followWrapper5 .row .marsp {
+  text-shadow: 0rem 0rem .6rem black;
+  background-color: rgba(24, 4, 44, 0.558);
+  -webkit-box-shadow: inset 0 0 .5rem pink;
+          box-shadow: inset 0 0 .5rem pink;
+  width: 40%;
+  padding: 1vw;
+  border-radius: 1rem;
+  margin-right: 12vw;
+}
+
+body .outWrap .wrapper #followWrapper2 .row .creativePiece, body .outWrap .wrapper #followWrapper3 .row .creativePiece, body .outWrap .wrapper #followWrapper3 .row .creativePiece, body .outWrap .wrapper #followWrapper4 .row .creativePiece, body .outWrap .wrapper #followWrapper5 .row .creativePiece {
+  margin-bottom: 4vw;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  line-height: 1.75;
+  transition: all ease .5s;
+  z-index: 6;
+  background-color: rgba(24, 4, 44, 0.558);
+  -webkit-box-shadow: inset 0 0 .5rem pink;
+          box-shadow: inset 0 0 .5rem pink;
+}
+
+body .outWrap .wrapper #followWrapper2 .row .creativePiece *, body .outWrap .wrapper #followWrapper3 .row .creativePiece *, body .outWrap .wrapper #followWrapper3 .row .creativePiece *, body .outWrap .wrapper #followWrapper4 .row .creativePiece *, body .outWrap .wrapper #followWrapper5 .row .creativePiece * {
+  font-size: 1.25vw;
+}
+
+body .outWrap .wrapper #followWrapper2 .row .creativePiece:hover, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover, body .outWrap .wrapper #followWrapper4 .row .creativePiece:hover, body .outWrap .wrapper #followWrapper5 .row .creativePiece:hover {
+  text-shadow: none;
+}
+
+body .outWrap .wrapper #followWrapper2 .row .creativePiece:hover .gogreen, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover .gogreen, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover .gogreen, body .outWrap .wrapper #followWrapper4 .row .creativePiece:hover .gogreen, body .outWrap .wrapper #followWrapper5 .row .creativePiece:hover .gogreen {
+  color: lime !important;
+}
+
+body .outWrap .wrapper #followWrapper2 .row .creativePiece:hover *, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover *, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover *, body .outWrap .wrapper #followWrapper4 .row .creativePiece:hover *, body .outWrap .wrapper #followWrapper5 .row .creativePiece:hover * {
+  text-shadow: none !important;
+}
+
+body .outWrap .wrapper #followWrapper2 .row p, body .outWrap .wrapper #followWrapper3 .row p, body .outWrap .wrapper #followWrapper3 .row p, body .outWrap .wrapper #followWrapper4 .row p, body .outWrap .wrapper #followWrapper5 .row p {
+  text-shadow: 0 0 .3rem black;
+  width: 50%;
+  padding: 0% 11%;
+  line-height: 2vw;
+  font-size: 1.25vw;
+  text-shadow: 0rem 0rem .6rem black;
+  background-color: rgba(24, 4, 44, 0.558);
+  -webkit-box-shadow: inset 0 0 .5rem pink;
+          box-shadow: inset 0 0 .5rem pink;
+  padding: 1vw;
+  border-radius: 1rem;
+  width: 30%;
+  z-index: 100;
+}
+
+body .outWrap .wrapper #followWrapper2 .row .mp, body .outWrap .wrapper #followWrapper3 .row .mp, body .outWrap .wrapper #followWrapper3 .row .mp, body .outWrap .wrapper #followWrapper4 .row .mp, body .outWrap .wrapper #followWrapper5 .row .mp {
+  display: inline;
+  height: auto;
+  text-shadow: 0rem 0rem .6rem black;
+  background-color: rgba(24, 4, 44, 0.558);
+  -webkit-box-shadow: inset 0 0 .5rem pink;
+          box-shadow: inset 0 0 .5rem pink;
+  padding: 1vw;
+  border-radius: 1rem;
+  width: 30%;
+  z-index: 100;
+}
+
+body .outWrap .wrapper #followWrapper2 h1, body .outWrap .wrapper #followWrapper3 h1, body .outWrap .wrapper #followWrapper3 h1, body .outWrap .wrapper #followWrapper4 h1, body .outWrap .wrapper #followWrapper5 h1 {
+  text-shadow: 0 0 .3rem black;
+}
+
+body .outWrap .wrapper #followWrapper2 ul, body .outWrap .wrapper #followWrapper3 ul, body .outWrap .wrapper #followWrapper3 ul, body .outWrap .wrapper #followWrapper4 ul, body .outWrap .wrapper #followWrapper5 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 75%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  justify-content: space-between;
+  z-index: 6;
+}
+
+body .outWrap .wrapper #followWrapper2 ul li, body .outWrap .wrapper #followWrapper3 ul li, body .outWrap .wrapper #followWrapper3 ul li, body .outWrap .wrapper #followWrapper4 ul li, body .outWrap .wrapper #followWrapper5 ul li {
+  cursor: none !important;
+  font-size: 1.2vw;
+  padding: .5rem;
+  border-radius: 1rem;
+  background-color: rgba(157, 39, 212, 0.5);
+  margin: .25rem 1rem;
+  text-shadow: 0 0 0.25rem #3f003f;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+body .outWrap .wrapper #followWrapper2 ul li:hover, body .outWrap .wrapper #followWrapper3 ul li:hover, body .outWrap .wrapper #followWrapper3 ul li:hover, body .outWrap .wrapper #followWrapper4 ul li:hover, body .outWrap .wrapper #followWrapper5 ul li:hover {
+  background-color: #6f1a96;
+}
+
+body .outWrap .wrapper #followWrapper2 ul li:hover span, body .outWrap .wrapper #followWrapper3 ul li:hover span, body .outWrap .wrapper #followWrapper3 ul li:hover span, body .outWrap .wrapper #followWrapper4 ul li:hover span, body .outWrap .wrapper #followWrapper5 ul li:hover span {
+  color: lime !important;
+}
+
+body .outWrap .wrapper #followWrapper2 ul .previews, body .outWrap .wrapper #followWrapper3 ul .previews, body .outWrap .wrapper #followWrapper3 ul .previews, body .outWrap .wrapper #followWrapper4 ul .previews, body .outWrap .wrapper #followWrapper5 ul .previews {
+  opacity: .6;
+  width: 10vw;
+  height: 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: none !important;
+  overflow: hidden;
+  background: #9D27D4 !important;
+  -webkit-transform: rotateY("0deg");
+          transform: rotateY("0deg");
+  z-index: 6;
+  position: relative;
+}
+
+body .outWrap .wrapper #followWrapper2 ul .previews a, body .outWrap .wrapper #followWrapper3 ul .previews a, body .outWrap .wrapper #followWrapper3 ul .previews a, body .outWrap .wrapper #followWrapper4 ul .previews a, body .outWrap .wrapper #followWrapper5 ul .previews a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: inherit;
+  height: inherit;
+  -webkit-transition: all ease .25s !important;
+  transition: all ease .25s !important;
+  overflow: hidden;
+  cursor: none;
+}
+
+body .outWrap .wrapper #followWrapper2 ul .previews a img, body .outWrap .wrapper #followWrapper3 ul .previews a img, body .outWrap .wrapper #followWrapper3 ul .previews a img, body .outWrap .wrapper #followWrapper4 ul .previews a img, body .outWrap .wrapper #followWrapper5 ul .previews a img {
+  -webkit-transition: all ease 0.25s !important;
+  transition: all ease 0.25s !important;
+  width: 105%;
+  height: inherit;
+  height: inherit;
+  cursor: none;
+}
+
+body .outWrap .wrapper #followWrapper2 ul .previews:hover, body .outWrap .wrapper #followWrapper3 ul .previews:hover, body .outWrap .wrapper #followWrapper3 ul .previews:hover, body .outWrap .wrapper #followWrapper4 ul .previews:hover, body .outWrap .wrapper #followWrapper5 ul .previews:hover {
+  opacity: 1;
+  background: rgba(111, 26, 150, 0.582);
+  -webkit-box-shadow: 0rem 0rem 1rem black;
+          box-shadow: 0rem 0rem 1rem black;
+}
+
+body .outWrap .wrapper #followWrapper2 ul .previews ::after, body .outWrap .wrapper #followWrapper3 ul .previews ::after, body .outWrap .wrapper #followWrapper3 ul .previews ::after, body .outWrap .wrapper #followWrapper4 ul .previews ::after, body .outWrap .wrapper #followWrapper5 ul .previews ::after {
+  position: absolute;
+  color: lime !important;
+}
+
+body .outWrap .wrapper #followWrapper3 .lightbox {
+  z-index: 101;
+  opacity: 0;
+  display: none;
+  height: 0vh;
+  width: 0vw;
+  position: absolute;
+  cursor: pointer !important;
+  overflow: visible !important;
+}
+
+body .outWrap .wrapper #followWrapper3 .lightbox embed {
+  -webkit-transition: all ease 1s !important;
+  transition: all ease 1s !important;
+  z-index: 101;
+  display: none;
+  width: 0vw;
+  height: 0vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-bottom: 5vw solid rgba(157, 39, 212, 0.322) !important;
+  background: url("./customPhotos/loading.gif");
+  background-size: 4rem 3.75rem;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-shadow: 0 0 1rem 1000vw rgba(255, 255, 255, 0.322) !important;
+          box-shadow: 0 0 1rem 1000vw rgba(255, 255, 255, 0.322) !important;
+}
+
+body .outWrap .wrapper #followWrapper3 .lightbox .closeButton {
+  position: absolute;
+  bottom: 3.7vh;
+  right: 4%;
+  z-index: 102;
+  padding: 1rem;
+  -webkit-transition: all ease-in 3s !important;
+  transition: all ease-in 3s !important;
+  opacity: 0;
+  cursor: pointer;
+}
+
+body .outWrap .wrapper #followWrapper3 .asteroids {
+  width: 10%;
+  margin-top: -22.5vw;
+  margin-left: 10vw;
+}
+
+body .outWrap .wrapper #followWrapper3 .asteroids.two {
+  width: 3%;
+  right: 14vw;
+  -webkit-animation-name: rotation !important;
+          animation-name: rotation !important;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+body .outWrap .wrapper #followWrapper3 .mars {
+  width: 40%;
+  -webkit-transform: rotate(45deg) !important;
+          transform: rotate(45deg) !important;
+}
+
+body .outWrap .wrapper #followWrapper3 h2 {
+  font-size: 2vw;
+  text-shadow: 0 0 .75rem black;
+}
+
+body .outWrap .wrapper #followWrapper3 ul {
+  margin-top: -4vw;
+}
+
+body .outWrap .wrapper #followWrapper3 ul li {
+  border-radius: 1rem;
+}
+
+body .outWrap .wrapper #followWrapper3 p {
+  margin-top: -4vw;
+  text-shadow: 0 0 .75rem black;
+}
+
+body .outWrap .wrapper #followWrapper3 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1vw 0vw;
+  padding-left: 11vw;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .outWrap .wrapper #followWrapper3 .row * {
+  text-shadow: 0 0 .75rem black;
+}
+
+body .outWrap .wrapper #followWrapper3 .gitlink {
+  overflow: visible !important;
+  position: absolute;
+  width: 6% !important;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: xMovement;
+          animation-name: xMovement;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  height: auto !important;
+  padding: none;
+  left: 10%;
+  top: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: none;
+}
+
+body .outWrap .wrapper #followWrapper3 .gitlink img {
+  width: 100%;
+}
+
+body .outWrap .wrapper #followWrapper3 .gitlink span {
+  margin-top: -20%;
+  text-shadow: 0 0 .75rem black;
+}
+
+body .outWrap .wrapper #followWrapper3 .gitlink span:active {
+  color: lime !important;
+}
+
+body .outWrap .wrapper #followWrapper4 {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 3.75vw;
+}
+
+body .outWrap .wrapper #followWrapper4 .planet_jupiter {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  z-index: -100 !important;
+  position: absolute;
+  -webkit-animation-name: xMovement;
+          animation-name: xMovement;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  animation-duration: 10s;
+  width: 40%;
+}
+
+body .outWrap .wrapper #followWrapper4 .row {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+body .outWrap .wrapper #followWrapper4 .row .creativePiece {
+  -webkit-box-shadow: inset 0 0 .5rem pink;
+          box-shadow: inset 0 0 .5rem pink;
+  background-color: rgba(24, 4, 44, 0.558);
+  z-index: 10 !important;
+  position: relative;
+  font-size: 1.25vw;
+}
+
+body .outWrap .wrapper #followWrapper4 .row .creativePiece * {
+  font-size: 1.25vw;
+}
+
+body .outWrap .wrapper #followWrapper4 .row .creativePiece span {
+  position: relative;
+  z-index: 10 !important;
+}
+
+body .outWrap .wrapper #followWrapper4 .row .creativePiece:hover .gogreen {
+  color: lime !important;
+}
+
+body .outWrap .wrapper #followWrapper4 .row .creativePiece:hover * {
+  color: #9d27d4;
+}
+
+body .outWrap .wrapper #followWrapper4 h1 {
+  text-shadow: 0 0 1rem black;
+  font-size: 2vw;
+  z-index: 1 !important;
+  margin-bottom: 1VW;
+}
+
+body .outWrap .wrapper #followWrapper4 ol {
+  width: 75%;
+  list-style-type: none;
+  position: relative;
+  height: 5vw;
+  overflow: visible;
+}
+
+body .outWrap .wrapper #followWrapper4 ol * {
+  cursor: none;
+}
+
+body .outWrap .wrapper #followWrapper4 ol li {
+  position: absolute;
+  left: 30%;
+  margin: 0% 5%;
+  z-index: 2;
+  -webkit-animation-name: aroundtheworldZed;
+          animation-name: aroundtheworldZed;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  margin-top: -4vw;
+}
+
+body .outWrap .wrapper #followWrapper4 ol li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1vw;
+}
+
+body .outWrap .wrapper #followWrapper4 ol li a img {
+  -webkit-animation-name: xMovement;
+          animation-name: xMovement;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  width: 8vw;
+  margin-bottom: .5vw;
+}
+
+body .outWrap .wrapper #followWrapper4 ol li a .one {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+body .outWrap .wrapper #followWrapper4 ol li a .two {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+body .outWrap .wrapper #followWrapper4 ol li a .three {
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+}
+
+body .outWrap .wrapper #followWrapper4 ol li a .four {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+body .outWrap .wrapper #followWrapper5 {
+  position: relative;
+}
+
+body .outWrap .wrapper #followWrapper5 .sat {
+  position: absolute;
+  -webkit-animation-name: xMovement;
+          animation-name: xMovement;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  width: 45%;
+  margin-bottom: 1.5vw;
+  z-index: -100 !important;
+}
+
+body .outWrap .wrapper #followWrapper5 .sat.ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  left: 10vw;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  width: 80%;
+  z-index: -100 !important;
+}
+
+body .outWrap .wrapper #followWrapper5 h2 {
+  z-index: 5;
+  margin-top: 2vw;
+  width: 75%;
+  text-align: center;
+}
+
+body .outWrap .wrapper #followWrapper5 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .outWrap .wrapper #followWrapper5 .row * {
+  font-size: 1.25vw;
+}
+
+body .outWrap .wrapper #followWrapper5 .row p {
+  z-index: 7 !important;
+  width: 40%;
+  z-index: 100;
+  margin-top: -5vw;
+  background-color: rgba(24, 4, 44, 0.558);
+  -webkit-box-shadow: inset 0 0 .5rem pink;
+          box-shadow: inset 0 0 .5rem pink;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform {
+  z-index: 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer !important;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform label {
+  margin-top: .75vw;
+  margin-bottom: .25vw;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform input, body .outWrap .wrapper #followWrapper5 .row .mainform textarea {
+  font-size: 1vw;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  background-color: rgba(24, 4, 44, 0.558);
+  color: lime;
+  text-align: center;
+  padding: .75vw;
+  border: none;
+  border-radius: .5rem;
+  -webkit-box-shadow: inset 0 0 .5rem pink;
+          box-shadow: inset 0 0 .5rem pink;
+  -webkit-user-select: initial !important;
+     -moz-user-select: initial !important;
+      -ms-user-select: initial !important;
+          user-select: initial !important;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform input::-webkit-input-placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea::-webkit-input-placeholder {
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  font-size: .75vw;
+  color: #3e3e3e;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform input:-ms-input-placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea:-ms-input-placeholder {
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  font-size: .75vw;
+  color: #3e3e3e;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform input::-ms-input-placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea::-ms-input-placeholder {
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  font-size: .75vw;
+  color: #3e3e3e;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform input::placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea::placeholder {
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  font-size: .75vw;
+  color: #3e3e3e;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform input:hover, body .outWrap .wrapper #followWrapper5 .row .mainform textarea:hover {
+  background-color: rgba(120, 74, 167, 0.823);
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform input:hover::-webkit-input-placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea:hover::-webkit-input-placeholder {
+  color: white;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform input:hover:-ms-input-placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea:hover:-ms-input-placeholder {
+  color: white;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform input:hover::-ms-input-placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea:hover::-ms-input-placeholder {
+  color: white;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform input:hover::placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea:hover::placeholder {
+  color: white;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 5vw;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform .submit {
+  margin-top: 3vw;
+  cursor: pointer;
+}
+
+body .outWrap .wrapper.gametime {
+  width: 100vw;
+}
+
+body .outWrap .wrapper.gametime header {
+  position: relative;
+  background-image: url("./customPhotos/mainbkrnd2bh.png");
+  background-size: cover;
+}
+
+body .outWrap .wrapper.gametime header .readysetgo {
+  position: absolute;
+  font-size: 3vw;
+  z-index: 6;
+}
+
+body .outWrap .wrapper.gametime header .asteroids.small, body .outWrap .wrapper.gametime header .asteroids.med, body .outWrap .wrapper.gametime header .asteroids.large {
+  width: 10%;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: rotation !important;
+          animation-name: rotation !important;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  z-index: 7 !important;
+  position: absolute;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  margin-top: 1%;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+body .outWrap .wrapper.gametime header .hitone {
+  width: 5;
+}
+
+body .outWrap .wrapper.gametime header .finalhit {
+  width: 2.5;
+}
+
+body .outWrap .wrapper.gametime header .healthbar.one, body .outWrap .wrapper.gametime header .healthbar.two, body .outWrap .wrapper.gametime header .scorebar {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  bottom: 5%;
+  right: 2.5%;
+  width: 30%;
+}
+
+body .outWrap .wrapper.gametime header .healthbar.one h1, body .outWrap .wrapper.gametime header .healthbar.two h1, body .outWrap .wrapper.gametime header .scorebar h1 {
+  margin-right: 2.5%;
+  font-size: 1.25vw;
+}
+
+body .outWrap .wrapper.gametime header .healthbar.one div, body .outWrap .wrapper.gametime header .healthbar.two div, body .outWrap .wrapper.gametime header .scorebar div {
+  height: 5%;
+}
+
+body .outWrap .wrapper.gametime header .healthbar.one .good, body .outWrap .wrapper.gametime header .healthbar.two .good, body .outWrap .wrapper.gametime header .scorebar .good {
+  width: 100%;
+  background-color: #52005b;
+  color: rgba(0, 255, 0, 0);
+}
+
+body .outWrap .wrapper.gametime header .healthbar.one .bad, body .outWrap .wrapper.gametime header .healthbar.two .bad, body .outWrap .wrapper.gametime header .scorebar .bad {
+  width: 0%;
+  background: red;
+  color: rgba(255, 0, 0, 0);
+}
+
+body .outWrap .wrapper.gametime header .healthbar.one img, body .outWrap .wrapper.gametime header .healthbar.two img, body .outWrap .wrapper.gametime header .scorebar img {
+  width: 3vw;
+  margin-left: 2.5%;
+  -webkit-animation-name: xMovement;
+          animation-name: xMovement;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+body .outWrap .wrapper.gametime header .healthbar.one img {
+  margin-left: 4.5%;
+}
+
+body .outWrap .wrapper.gametime header .scorebar {
+  width: 31.5%;
+  bottom: 15%;
+}
+
+body .outWrap .wrapper.gametime header .scorebar h1 {
+  width: 100%;
+  text-align: right;
+}
+
+body .outWrap .wrapper.gametime header .scorebar h1 .scoredisplay {
+  -webkit-transition: all ease-in-out .25s;
+  transition: all ease-in-out .25s;
+}
+
+body .outWrap .wrapper.gametime header .scorebar img {
+  margin-right: .5rem;
+}
+
+body .outWrap .wrapper.gametime header img {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .outWrap .wrapper.gametime header .outer {
+  position: absolute;
+  -webkit-animation: rotationbh 5s infinite linear;
+          animation: rotationbh 5s infinite linear;
+  width: 35%;
+  opacity: .4;
+  z-index: 1;
+}
+
+body .outWrap .wrapper.gametime header .inner {
+  position: absolute;
+  opacity: .4;
+  -webkit-animation: rotationbh 2s infinite linear;
+          animation: rotationbh 2s infinite linear;
+  width: 30%;
+  z-index: 1;
+}
+
+body .outWrap .wrapper.gametime header .center {
+  position: absolute;
+  -webkit-animation: rotationbh .25s infinite linear;
+          animation: rotationbh .25s infinite linear;
+  width: 12%;
+  z-index: 1;
+}
+
+body .outWrap .wrapper.gametime header .lightbox {
+  cursor: default;
+  z-index: 1000 !important;
+  opacity: 0;
+  display: none;
+  height: 0vh;
+  width: 0vw;
+  position: absolute;
+  margin-bottom: -98vh;
+  -webkit-transition: all ease 1s !important;
+  transition: all ease 1s !important;
+}
+
+body .outWrap .wrapper.gametime header .lightbox div, body .outWrap .wrapper.gametime header .lightbox .embeder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  line-height: 2;
+  -webkit-transition: all ease 1s !important;
+  transition: all ease 1s !important;
+  z-index: 101;
+  display: none;
+  width: 0vw;
+  height: 0vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-bottom: 5vw solid rgba(157, 39, 212, 0.322) !important;
+  background: url("./customPhotos/babyearth.png");
+  background-size: 4rem 3.75rem;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2vw solid rgba(157, 39, 212, 0.322);
+  border-radius: 1rem;
+  color: white;
+  text-align: left;
+  padding: 3vw;
+}
+
+body .outWrap .wrapper.gametime header .lightbox div *, body .outWrap .wrapper.gametime header .lightbox .embeder * {
+  width: 100%;
+}
+
+body .outWrap .wrapper.gametime header .lightbox .closeButton {
+  position: absolute;
+  bottom: 6vh;
+  z-index: 102;
+}
+
+body #siteStartUp.gametime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: black;
+  position: fixed;
+  top: 0%;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  -webkit-animation-name: loadIn2;
+          animation-name: loadIn2;
+  -webkit-animation-duration: 6.5s;
+          animation-duration: 6.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-perspective: 100rem;
+          perspective: 100rem;
+}
+
+body #siteStartUp.gametime h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 50%;
+  background: gold;
+  border: 0.75vw solid #9f8c16;
+  height: 10vw;
+  width: 10vw;
+  -webkit-box-shadow: 1rem 0rem #53490a;
+          box-shadow: 1rem 0rem #53490a;
+  -webkit-animation-name: rotationY !important;
+          animation-name: rotationY !important;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+  margin-top: 3vw;
+  margin-right: .5vw;
+  padding-left: .5vw;
+  color: #938212;
+  text-shadow: 0.2rem 0rem #584d08;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body #siteStartUp.gametime span {
+  z-index: 100;
+  margin-top: 3vw;
+  margin-right: .5vw;
+  font-size: 2vw;
+  text-shadow: 0 .5rem .75rem black;
+  font-weight: bolder;
+  padding-left: 2vw;
+}
+
+body #siteStartUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: black;
+  position: fixed;
+  top: 0%;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  -webkit-animation-name: loadIn2;
+          animation-name: loadIn2;
+  -webkit-animation-duration: 6.5s;
+          animation-duration: 6.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-perspective: 100rem;
+          perspective: 100rem;
+}
+
+body #siteStartUp img {
+  width: 25vw;
+  height: 25vw;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  -webkit-animation-name: leaveSmoothly;
+          animation-name: leaveSmoothly;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+body #siteStartUp h3 {
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  -webkit-animation-name: leaveSmoothly;
+          animation-name: leaveSmoothly;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  text-align: center;
+  bottom: 15%;
+  right: 5%;
+  position: absolute;
+  font-weight: 1vw;
+}
+
+body #siteStartUp h4 {
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  -webkit-animation-name: leaveSmoothly;
+          animation-name: leaveSmoothly;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  width: 30%;
+  text-align: right;
+  position: absolute;
+  bottom: 10%;
+  color: lime !important;
+  right: 5.6%;
+  font-weight: 1vw;
+}
+
+@media screen and (max-width: 500px) {
+  menu {
+    display: none !important;
+  }
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header h2, header h6 {
+    line-height: 1 !important;
+  }
+  header h2 span, header h6 span {
+    font-size: 5vw !important;
+    z-index: 1 !important;
+    line-height: 1.5;
+  }
+  header .logoContainerAnimator {
+    margin: 34.5vw 0vw !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-animation: none !important;
+            animation: none !important;
+    opacity: 1 !important;
+  }
+  header .logoContainerAnimator p {
+    font-size: 4vw !important;
+  }
+  header .logoContainerAnimator img {
+    width: 35% !important;
+    border: 1.25vw solid #9d27d4 !important;
+  }
+  header h2, header h6 {
+    opacity: 1 !important;
+    -webkit-animation: none !important;
+            animation: none !important;
+  }
+  header .world {
+    left: -12% !important;
+  }
+  header .worldClouds {
+    left: -5% !important;
+  }
+  header h6, header h2 {
+    width: 70% !important;
+  }
+  #followWrapper2, #followWrapper3, #followWrapper4, #followWrapper5 {
+    padding-top: 7vw !important;
+  }
+  #followWrapper2 h1, #followWrapper2 h2, #followWrapper3 h1, #followWrapper3 h2, #followWrapper4 h1, #followWrapper4 h2, #followWrapper5 h1, #followWrapper5 h2 {
+    width: 90%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 5vw;
+  }
+  #followWrapper2 h1 span, #followWrapper2 h2 span, #followWrapper3 h1 span, #followWrapper3 h2 span, #followWrapper4 h1 span, #followWrapper4 h2 span, #followWrapper5 h1 span, #followWrapper5 h2 span {
+    font-size: 5vw;
+  }
+  #followWrapper2 #responsiveflexcol2 span, #followWrapper3 #responsiveflexcol2 span, #followWrapper4 #responsiveflexcol2 span, #followWrapper5 #responsiveflexcol2 span {
+    font-size: 3vw;
+    line-height: 1.25 !important;
+  }
+  #followWrapper4 {
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+  }
+  #followWrapper4 .planet_jupiter {
+    width: 100% !important;
+  }
+  #followWrapper4 h1 {
+    margin-top: -1.5vw !important;
+  }
+  #followWrapper4 ol {
+    z-index: 10 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 59vw !important;
+  }
+  #followWrapper4 ol li {
+    margin-top: 0px !important;
+  }
+  #responsiveflexcol2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #responsiveflexcol2 .creativePiece.prev.responsivefontsizeP {
+    width: 150% !important;
+  }
+  #responsiveflexcol2 .creativePiece.prev.responsivefontsizeP span {
+    font-size: 4vw;
+  }
+  #responsiveflexcol2 li {
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: 0px !important;
+    -webkit-animation-name: none !important;
+            animation-name: none !important;
+    position: relative !important;
+  }
+  #responsiveflexcol2 li a {
+    overflow: visible;
+  }
+  #responsiveflexcol2 li a img {
+    width: 125% !important;
+  }
+  #responsiveflexcol {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    border-radius: .25rem;
+  }
+  #responsiveflexcol .contactdescr {
+    border-radius: .25rem;
+    margin-bottom: 5vw !important;
+  }
+  #responsiveflexcol li, #responsiveflexcol .creativePiece, #responsiveflexcol .creativePiece {
+    width: 93.75% !important;
+    text-align: center;
+    border-radius: 0rem !important;
+    line-height: 1.25;
+  }
+  #responsiveflexcol .previews {
+    height: 10vh !important;
+  }
+  #responsiveflexcol .mp {
+    border-radius: .25rem;
+    margin-top: 5vw !important;
+    margin-bottom: -4vw !important;
+  }
+  #responsiveflexcol .creativePiece {
+    width: 71% !important;
+    margin-bottom: 5vw !important;
+  }
+  #responsiveflexcol p {
+    width: 71% !important;
+    text-align: center;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  #responsiveflexcol form {
+    margin-top: 15vw !important;
+    width: 71% !important;
+  }
+  #responsiveflexcol form input, #responsiveflexcol form textarea {
+    width: 100% !important;
+    border-radius: 0rem !important;
+  }
+  .row {
+    margin-bottom: 0vw !important;
+  }
+  .responsivefontsizeP, .responsivefontsizeP span {
+    font-size: 3vw;
+    border-radius: 0rem !important;
+    line-height: 1.25;
+  }
+  #followWrapper5 h2 {
+    padding-top: 6.5vw !important;
+    font-size: 5vw !important;
+  }
+  #followWrapper5 .row .responsivefontsizeP {
+    font-size: 3vw !important;
+    line-height: 1.25 !important;
+  }
+  #followWrapper5 .row .responsivefontsizeP span {
+    font-size: 3vw !important;
+    line-height: 1.25;
+  }
+  #followWrapper5 .row form label {
+    text-align: center;
+    font-size: 3vw !important;
+  }
+  #followWrapper5 .row form label span {
+    font-size: 3vw !important;
+  }
+  #followWrapper5 .row form input, #followWrapper5 .row form textarea {
+    height: 5vh !important;
+  }
+  #followWrapper5 .row form input::-webkit-input-placeholder, #followWrapper5 .row form textarea::-webkit-input-placeholder {
+    -webkit-transition: all ease .25s;
+    transition: all ease .25s;
+    font-size: 2vw !important;
+    color: white;
+  }
+  #followWrapper5 .row form input:-ms-input-placeholder, #followWrapper5 .row form textarea:-ms-input-placeholder {
+    -webkit-transition: all ease .25s;
+    transition: all ease .25s;
+    font-size: 2vw !important;
+    color: white;
+  }
+  #followWrapper5 .row form input::-ms-input-placeholder, #followWrapper5 .row form textarea::-ms-input-placeholder {
+    -webkit-transition: all ease .25s;
+    transition: all ease .25s;
+    font-size: 2vw !important;
+    color: white;
+  }
+  #followWrapper5 .row form input::placeholder, #followWrapper5 .row form textarea::placeholder {
+    -webkit-transition: all ease .25s;
+    transition: all ease .25s;
+    font-size: 2vw !important;
+    color: white;
+  }
+  #followWrapper5 .row form .submit {
+    width: 50% !important;
+    font-size: 3vw !important;
+  }
+  #creativefix {
+    width: 75% !important;
+  }
+  #creativefix .creativePiece {
+    font-size: 3vw  !important;
+    border-radius: 0rem !important;
+    line-height: 1.25;
+  }
+  #creativefix .creativePiece span {
+    font-size: 3vw  !important;
+    border-radius: 0rem !important;
+    line-height: 1.25;
+  }
+  #followWrapper3 {
+    margin-top: 1.75vw !important;
+  }
+  #siteStartUp img {
+    width: 75vw !important;
+    height: 75vw !important;
+  }
+  #siteStartUp h3 {
+    bottom: 20% !important;
+  }
+  #siteStartUp h4 {
+    bottom: 15% !important;
+  }
+}
+
+@-webkit-keyframes leaveSmoothly {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes leaveSmoothly {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes loadIn2 {
+  0% {
+    opacity: 1;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+  }
+  75% {
+    opacity: 1;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+  }
+  90% {
+    z-index: 100;
+    opacity: 0;
+    height: 100vh;
+    width: 100%;
+  }
+  99% {
+    z-index: 100;
+    opacity: 0;
+    height: 0vh;
+    width: 0%;
+  }
+  100% {
+    z-index: 0;
+    opacity: 0;
+    height: 0vh;
+    width: 0%;
+  }
+}
+
+@keyframes loadIn2 {
+  0% {
+    opacity: 1;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+  }
+  75% {
+    opacity: 1;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+  }
+  90% {
+    z-index: 100;
+    opacity: 0;
+    height: 100vh;
+    width: 100%;
+  }
+  99% {
+    z-index: 100;
+    opacity: 0;
+    height: 0vh;
+    width: 0%;
+  }
+  100% {
+    z-index: 0;
+    opacity: 0;
+    height: 0vh;
+    width: 0%;
+  }
+}
+
+@-webkit-keyframes lightUpper {
+  0% {
+    color: white;
+  }
+  50% {
+    color: lime;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes lightUpper {
+  0% {
+    color: white;
+  }
+  50% {
+    color: lime;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes spinnerRev {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
+}
+
+@keyframes spinnerRev {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
+}
+
+@-webkit-keyframes worldMovement {
+  0% {
+    left: -2%;
+  }
+  50% {
+    left: -3%;
+  }
+  100% {
+    left: -2%;
+  }
+}
+
+@keyframes worldMovement {
+  0% {
+    left: -2%;
+  }
+  50% {
+    left: -3%;
+  }
+  100% {
+    left: -2%;
+  }
+}
+
+@-webkit-keyframes cloudMovement {
+  0% {
+    left: -1%;
+    top: 0%;
+  }
+  50% {
+    top: 1%;
+    left: -2%;
+  }
+  100% {
+    top: 0%;
+    left: -1%;
+  }
+}
+
+@keyframes cloudMovement {
+  0% {
+    left: -1%;
+    top: 0%;
+  }
+  50% {
+    top: 1%;
+    left: -2%;
+  }
+  100% {
+    top: 0%;
+    left: -1%;
+  }
+}
+
+@-webkit-keyframes upndown {
+  0% {
+    top: 18vw;
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  50% {
+    top: 16.5vw;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  100% {
+    top: 18vw;
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+@keyframes upndown {
+  0% {
+    top: 18vw;
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  50% {
+    top: 16.5vw;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  100% {
+    top: 18vw;
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+@-webkit-keyframes xMovement {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes xMovement {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@-webkit-keyframes xMovementsizr {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes xMovementsizr {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@-webkit-keyframes xMovement2 {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    top: 25%;
+  }
+  50% {
+    -webkit-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+    top: 24.9%;
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    top: 25%;
+  }
+}
+
+@keyframes xMovement2 {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    top: 25%;
+  }
+  50% {
+    -webkit-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+    top: 24.9%;
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    top: 25%;
+  }
+}
+
+@-webkit-keyframes flameEff {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    width: 8rem;
+    height: 6rem;
+  }
+  50% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+    width: 10rem;
+    height: 6rem;
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    width: 8rem;
+    height: 6rem;
+  }
+}
+
+@keyframes flameEff {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    width: 8rem;
+    height: 6rem;
+  }
+  50% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+    width: 10rem;
+    height: 6rem;
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    width: 8rem;
+    height: 6rem;
+  }
+}
+
+@-webkit-keyframes flameEff2 {
+  0% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+    width: 7rem;
+    height: 6rem;
+  }
+  50% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+    width: 7.5rem;
+    height: 6rem;
+  }
+  100% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+    width: 7rem;
+    height: 6rem;
+  }
+}
+
+@keyframes flameEff2 {
+  0% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+    width: 7rem;
+    height: 6rem;
+  }
+  50% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+    width: 7.5rem;
+    height: 6rem;
+  }
+  100% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+    width: 7rem;
+    height: 6rem;
+  }
+}
+
+@-webkit-keyframes bubbleUp {
+  0% {
+    font-size: 0rem;
+    color: white;
+  }
+  80% {
+    font-size: 3rem;
+    color: white;
+  }
+  100% {
+    font-size: 2.5rem;
+    color: #9d27d4;
+  }
+}
+
+@keyframes bubbleUp {
+  0% {
+    font-size: 0rem;
+    color: white;
+  }
+  80% {
+    font-size: 3rem;
+    color: white;
+  }
+  100% {
+    font-size: 2.5rem;
+    color: #9d27d4;
+  }
+}
+
+@-webkit-keyframes bubbleUp2 {
+  0% {
+    font-size: 0rem;
+    margin-bottom: -10rem;
+    z-index: 2;
+  }
+  100% {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    z-index: 5;
+  }
+}
+
+@keyframes bubbleUp2 {
+  0% {
+    font-size: 0rem;
+    margin-bottom: -10rem;
+    z-index: 2;
+  }
+  100% {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    z-index: 5;
+  }
+}
+
+@-webkit-keyframes bubbleUp3 {
+  0% {
+    font-size: 0rem;
+    margin-bottom: 0rem;
+  }
+  50% {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  100% {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+  }
+}
+
+@keyframes bubbleUp3 {
+  0% {
+    font-size: 0rem;
+    margin-bottom: 0rem;
+  }
+  50% {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  100% {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+  }
+}
+
+@-webkit-keyframes starySubtly {
+  0% {
+    top: 2%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+  12% {
+    top: 2%;
+    bottom: 2%;
+    left: 0%;
+    right: 0%;
+  }
+  24% {
+    top: 2%;
+    bottom: 2%;
+    left: 2%;
+    right: 0%;
+  }
+  36% {
+    top: 2%;
+    bottom: 2%;
+    left: 2%;
+    right: 2%;
+  }
+  48% {
+    top: 2%;
+    bottom: 2%;
+    left: 2%;
+    right: 0%;
+  }
+  60% {
+    top: 2%;
+    bottom: 2%;
+    left: 0%;
+    right: 0%;
+  }
+  80% {
+    top: 2%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+  100% {
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+}
+
+@keyframes starySubtly {
+  0% {
+    top: 2%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+  12% {
+    top: 2%;
+    bottom: 2%;
+    left: 0%;
+    right: 0%;
+  }
+  24% {
+    top: 2%;
+    bottom: 2%;
+    left: 2%;
+    right: 0%;
+  }
+  36% {
+    top: 2%;
+    bottom: 2%;
+    left: 2%;
+    right: 2%;
+  }
+  48% {
+    top: 2%;
+    bottom: 2%;
+    left: 2%;
+    right: 0%;
+  }
+  60% {
+    top: 2%;
+    bottom: 2%;
+    left: 0%;
+    right: 0%;
+  }
+  80% {
+    top: 2%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+  100% {
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+}
+
+@-webkit-keyframes dropIn {
+  0% {
+    opacity: 1;
+    margin: 4.65vw 0vw;
+  }
+  50% {
+    opacity: 1;
+    margin: 0vw 0vw;
+  }
+  60% {
+    opacity: 1;
+    margin: 4.65vw 0vw;
+  }
+  70% {
+    opacity: 1;
+    margin: 1.65vw 0vw;
+  }
+  100% {
+    opacity: 1;
+    margin: 4.65vw 0vw;
+  }
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 1;
+    margin: 4.65vw 0vw;
+  }
+  50% {
+    opacity: 1;
+    margin: 0vw 0vw;
+  }
+  60% {
+    opacity: 1;
+    margin: 4.65vw 0vw;
+  }
+  70% {
+    opacity: 1;
+    margin: 1.65vw 0vw;
+  }
+  100% {
+    opacity: 1;
+    margin: 4.65vw 0vw;
+  }
+}
+
+@-webkit-keyframes dropinTandom {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dropinTandom {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flyIn {
+  0% {
+    margin-left: -100vw;
+  }
+  100% {
+    margin-left: 0vw;
+  }
+}
+
+@keyframes flyIn {
+  0% {
+    margin-left: -100vw;
+  }
+  100% {
+    margin-left: 0vw;
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-10000deg);
+            transform: rotate(-10000deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-10000deg);
+            transform: rotate(-10000deg);
+  }
+}
+
+@-webkit-keyframes rotationY {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotationY {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes rotationYrev {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
+}
+
+@keyframes rotationYrev {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
+}
+
+@-webkit-keyframes aroundtheworld {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 80%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes aroundtheworld {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 80%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@-webkit-keyframes aroundtheworldZed {
+  0% {
+    z-index: -1000;
+    left: -10%;
+  }
+  50% {
+    z-index: 100;
+    left: 85%;
+  }
+  100% {
+    z-index: 100;
+    left: -10%;
+  }
+}
+
+@keyframes aroundtheworldZed {
+  0% {
+    z-index: -1000;
+    left: -10%;
+  }
+  50% {
+    z-index: 100;
+    left: 85%;
+  }
+  100% {
+    z-index: 100;
+    left: -10%;
+  }
+}
+
+@-webkit-keyframes aroundtheworldZed2 {
+  0% {
+    z-index: -1000;
+  }
+  50% {
+    z-index: -90;
+  }
+  100% {
+    z-index: -90;
+  }
+}
+
+@keyframes aroundtheworldZed2 {
+  0% {
+    z-index: -1000;
+  }
+  50% {
+    z-index: -90;
+  }
+  100% {
+    z-index: -90;
+  }
+}
+
+@-webkit-keyframes aroundtheworldZed3 {
+  0% {
+    z-index: 100;
+    left: -10%;
+  }
+  50% {
+    z-index: 2;
+    left: 80%;
+  }
+  100% {
+    z-index: 2;
+    left: -10%;
+  }
+}
+
+@keyframes aroundtheworldZed3 {
+  0% {
+    z-index: 100;
+    left: -10%;
+  }
+  50% {
+    z-index: 2;
+    left: 80%;
+  }
+  100% {
+    z-index: 2;
+    left: -10%;
+  }
+}
+
+@-webkit-keyframes aroundtheworldZed4 {
+  0% {
+    z-index: 100;
+    left: -10%;
+    top: 0%;
+  }
+  50% {
+    z-index: 2;
+    left: 100%;
+    top: 0%;
+  }
+  100% {
+    z-index: 2;
+    left: -10%;
+    top: 0%;
+  }
+}
+
+@keyframes aroundtheworldZed4 {
+  0% {
+    z-index: 100;
+    left: -10%;
+    top: 0%;
+  }
+  50% {
+    z-index: 2;
+    left: 100%;
+    top: 0%;
+  }
+  100% {
+    z-index: 2;
+    left: -10%;
+    top: 0%;
+  }
+}
+
+@-webkit-keyframes rotationbh {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotationbh {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+* {
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
+}
+/*# sourceMappingURL=style.css.map */

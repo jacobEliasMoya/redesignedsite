@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/645706501e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="./customPhotos/JMLoad.png">
+    <title>Jacob's Space</title>
+</head>
+<body>
+
+    <div class="outWrap">    
+        <div class="wrapper gametime" id="followWrapper" style="overflow: hidden;">
+            <header class="gamecontainer" style='margin-right: -1rem !important;'>
+                <!-- Begin main header content -->
+
+
+                <!-- End main header content -->
+                <div class="healthbar one"> 
+                    <h1>Earth</h1>
+                    <img class="earthone" src="./customPhotos/babyearth.png" alt="">
+                    <img class="earthtwo" src="./customPhotos/babyearth.png" alt="">
+                    <img class="earththree" src="./customPhotos/babyearth.png" alt="">
+                    <img class="earthfour" src="./customPhotos/babyearth.png" alt="">
+                    <img class="earthfive" src="./customPhotos/babyearth.png" alt="">
+                </div>
+
+                <!-- <div class="healthbar two"> 
+                    <h1>Ship</h1>
+                    <img src="./customPhotos/spaceShip.png" alt="">
+                    <img src="./customPhotos/spaceShip.png" alt="">
+                    <img src="./customPhotos/spaceShip.png" alt="">
+
+                </div> -->
+
+                <div class="scorebar two"> 
+                    <img style='visibility: hidden !important;' src="./customPhotos/spaceShip.png" alt="">
+                    <img style='visibility: hidden !important;' src="./customPhotos/spaceShip.png" alt="">
+                    <img style='visibility: hidden !important;' src="./customPhotos/spaceShip.png" alt="">
+                    <h1>Score:<span class="scoredisplay">0000</span></h1>
+                </div>
+
+            
+                
+                <img class="outer" src="./customPhotos/bhole_outer.png" alt="">
+                <img class="inner" src="./customPhotos/bhole_inner.png" alt="">
+                <img class="center" src="./customPhotos/bhole_eventhorizon.png" alt="">
+
+                <!-- images in background/foreground -->
+                <img class='world game' style='z-index: 5 !important;' src="./customPhotos/worldIMG.png" alt="">
+                <img class='worldClouds' src="./customPhotos/worldClouds.png" alt="">
+                <img style='left:20% !important' id='flame' class="f1" src="./customPhotos/flameLayer2.png" alt="">
+                <img style='left:20% !important' id='flame' class="f2" src="./customPhotos/flameLayer1.png" alt="">
+                <img  style='left:20% !important' id='spaceX'  src="./customPhotos/spaceShip.png" alt="">
+
+                <div id='bullet' src="./customPhotos/bullet.png" alt=""></div>
+                <!--END images in background/foreground -->
+                <!-- hidden lightbox to be used for basic informaiton -->
+                <div class="lightbox" style="overflow: hidden;z-index: 100;border-radius: 1rem; background: rgba(56, 56, 56, 0.719);">
+                    <div src="" type="">
+                        <h1>Oh no! it looks like a <span class="purple">Black Hole</span> spawned inside our solar system!!!</h1>
+                        <p>... the pull from the Black Holes Gravity is pulling <span class="purple">asteroids</span> towards Earth!</p>
+                        <p><span class="purple">Defend</span> Earth at ALL COSTS</p>
+                        <button class="purple">Close [x]</button>
+                    </div>
+                </div>
+                <h1 class="readysetgo" style='z-index: 100;'>Ready?</h1>
+
+            </header>
+        
+   
+        </div>
+    </div>
+    
+    <menu>
+        <ul class="mainUL">
+            <li class="startbutton"><a clas= 'startbutton' href="#">Start</a></li>
+            <li class="experienceButton reset"><a href="#">Reset</a></li>
+            <!-- <li class="portfolioButton"><a href="#">Options</a></li> -->
+            <li class="gobackhome"><a href="/index.php">Take me Home!</a></li>
+        </ul>
+
+    </menu>
+
+    <div id="siteStartUp" class="gametime">
+        <h1>25¢</h1>
+        <span class="purple">GAMETIME!</span>
+
+    </div>
+    <script src="./reanimateShip.js"></script>
+    <script src="./gamefollowjs.js"></script>
+    <script src="./gameFunction.js"></script>
+    <script src="./reset.js"></script>
+    
+
+
+</body>
+</html>
+
