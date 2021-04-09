@@ -229,19 +229,17 @@ body{
                 scroll-behavior: smooth;
                 color: white;
                 text-align: center;
-                padding-top: 3vw;
 
                 .logoContainerAnimator{
-                    @include animationInfo();
-                    animation-duration: 3.5s;
-                    animation-name: dropIn;
-                    animation-iteration-count: 1;
-                    animation-delay: 6s;
-                    margin: 4.65vw 0vw;
+                    // @include animationInfo();
+                    // animation-duration: 3.5s;
+                    // animation-name: dropIn;
+                    // animation-iteration-count: 1;
+                    // animation-delay: 6s;
                     width: 50%;
                     @include flexRow();
                     opacity: 1;
-
+                    margin: 9vw 0vw;
                     #mainLogo{
                         position: relative;
                         perspective: 200rem;
@@ -264,8 +262,6 @@ body{
                         font-size: 1.25vw ;
                         transition-delay: .5s;
                         transform: rotateY('0deg');
-
-
                     }
                 }
 
@@ -273,17 +269,16 @@ body{
                     position: relative;
                     border-radius: .25rem;
                     padding-bottom: .5rem;
+                    opacity: 1;
+
                     @include animationInfo();
                     animation-delay: 3.5s;
-                    opacity: 1;
 
                     animation-duration: 3s;
                     animation-name: dropinTandom;
                     animation-iteration-count: 1;
-                    font-size: 1.75vw;
-                    line-height:2.5rem;
                     span{
-                        font-size: 1.75vw;
+                        font-size: 1.5vw;
                     }
                     .keyword{
                         transition: all ease .5s;
@@ -318,18 +313,15 @@ body{
                 h2{
                     opacity: 1;
                     position: relative;
-                    font-size: 4.5vw ;
                     @include animationInfo();
                     animation-duration: 3s;
                     animation-name: dropinTandom;
                     animation-iteration-count: 1;
-                    line-height:3rem;
                     animation-delay: 2.5s;
 
 
 
                     .bubbly-animate{
-                        font-size: 2.5vw ;
                         @include animationInfo();
                         // animation-delay: 9.5s;
                         animation-name: bubbleUp;
@@ -339,7 +331,6 @@ body{
 
 
                         span{
-                            font-size: 2.5vw ;
                             @include animationInfo();
                             // animation-delay: 10.75s;
                             animation-name: bubbleUp3;
@@ -352,15 +343,10 @@ body{
                         }
                         .purple.keyword{
                             transition: all ease .5s;
-                            font-size: 2.5vw ;
                         }
                     }
 
 
-                    span{
-                        font-size: 2.5vw;
-
-                    }
                 }
                 // background: rgb(12, 30, 37);
                 // DONT TOUCH
@@ -520,9 +506,10 @@ body{
                 }                
             }
         
-            #followWrapper2,#followWrapper3,#followWrapper3,#followWrapper4,#followWrapper5{
-                padding-top: 2vw ;
+            header,#followWrapper2,#followWrapper3,#followWrapper3,#followWrapper4,#followWrapper5{
                 justify-content: space-evenly;
+                padding: 4vw 0vw ;
+
                 .mars{
                     position: absolute;
                     animation-name: xMovement;
@@ -531,11 +518,12 @@ body{
                     border-radius: 50%;
                     width: 20%;
                     z-index: -100;
+                    
                 }
 
                 h1,h2{
+                        font-size: 1.5vw;
 
-                    font-size: 2vw;
                     text-shadow: 0 0 2rem black;
 
                 }
@@ -549,13 +537,9 @@ body{
                         background-color: rgba(24, 4, 44, 0.558);
                         box-shadow: inset 0 0 .5rem pink;
                         width: 40%;
-                        padding:1vw;
                         border-radius: 1rem;
-                        margin-right: 12vw;
-
                     }
                     .creativePiece{
-                        margin-bottom: 4vw;
                         transition: all ease .5s;
                         line-height: 1.75;
                         transition: all ease .5s;
@@ -679,6 +663,11 @@ body{
                 }
             }
 
+            #followWrapper2{
+                .row{
+                    margin: 4.25vw 0vw;
+                }
+            }
             #followWrapper3{
                 .lightbox{
                     z-index: 101;
@@ -736,22 +725,19 @@ body{
                     transform: rotate(45deg) !important;
                 }
                 h2{
-                    font-size: 2vw;
                     text-shadow: 0 0 .75rem black;
                 }
                 ul{
-                    margin-top: -4vw;
                     li{
                         border-radius: 1rem;
                     }
                 }
                 p{
-                    margin-top: -4vw;
                     text-shadow: 0 0 .75rem black;
                 }
                 .row{
                     @include flexRow();
-                    margin: 1vw 0vw;
+                    margin: 5vw 0vw;
                     padding-left: 11vw;
                     justify-content: space-evenly;
                     *{
@@ -787,8 +773,6 @@ body{
 
             }
             #followWrapper4{
-                justify-content: space-evenly;
-                padding-top: 3.75vw ;
 
                 .planet_jupiter{
                     animation-duration: 5s;
@@ -805,6 +789,7 @@ body{
                     @include flexRow();
                     // margin-bottom: -5vw;
                     position: relative;
+                    margin: 5.5vw 0vw;
                     .creativePiece{
                         *{
                             font-size: 1.25vw;
@@ -834,7 +819,6 @@ body{
                     text-shadow: 0 0 1rem black;
                     font-size: 2vw;
                     z-index: 1 !important;
-                    margin-bottom: 1VW;
 
                 }
                 ol{
@@ -859,7 +843,6 @@ body{
                         animation-name: aroundtheworldZed;
                         @include animationInfo();
                         animation-duration: 20s;
-                        margin-top: -4vw;
     
                         a{
                             @include flexCol();
@@ -916,29 +899,31 @@ body{
                 }
                 h2{
                     z-index: 5;
-                    margin-top: 2vw;
                     width: 75%;
                     text-align: center;
                 }
                 .row{
                     @include flexRow();
                     justify-content: space-evenly;
+                    align-items: flex-start;
                     *{
                         font-size: 1.25vw;
                     }
                     p{
                         z-index: 7 !important;
-                        width: 40%;
+                        width: 35%;
                         z-index: 100;
-                        margin-top: -5vw;
                         background-color: rgba(24, 4, 44, 0.558);
                         box-shadow: inset 0 0 .5rem pink;
+                        margin-top: 2rem;
+                        width: 35%;
 
                     }
                     .mainform{
                         z-index: 7;
                         @include flexCol();
                         cursor: pointer !important;
+                        
                         label{
                             margin-top: .75vw;
                             margin-bottom: .25vw;
@@ -1341,7 +1326,6 @@ body{
         }
     }
     #followWrapper2,#followWrapper3,#followWrapper4,#followWrapper5{
-        padding-top: 7vw !important;
         h1,h2{
             width: 90%;
             text-align: center;

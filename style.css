@@ -294,25 +294,9 @@ body .outWrap .wrapper header {
   scroll-behavior: smooth;
   color: white;
   text-align: center;
-  padding-top: 3vw;
 }
 
 body .outWrap .wrapper header .logoContainerAnimator {
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
-  -webkit-animation-name: dropIn;
-          animation-name: dropIn;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-  margin: 4.65vw 0vw;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,6 +312,7 @@ body .outWrap .wrapper header .logoContainerAnimator {
       -ms-flex-direction: row;
           flex-direction: row;
   opacity: 1;
+  margin: 9vw 0vw;
 }
 
 body .outWrap .wrapper header .logoContainerAnimator #mainLogo {
@@ -365,6 +350,7 @@ body .outWrap .wrapper header h6 {
   position: relative;
   border-radius: .25rem;
   padding-bottom: .5rem;
+  opacity: 1;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
@@ -373,19 +359,16 @@ body .outWrap .wrapper header h6 {
           animation-fill-mode: forwards;
   -webkit-animation-delay: 3.5s;
           animation-delay: 3.5s;
-  opacity: 1;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-name: dropinTandom;
           animation-name: dropinTandom;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  font-size: 1.75vw;
-  line-height: 2.5rem;
 }
 
 body .outWrap .wrapper header h6 span {
-  font-size: 1.75vw;
+  font-size: 1.5vw;
 }
 
 body .outWrap .wrapper header h6 .keyword {
@@ -435,7 +418,6 @@ body .outWrap .wrapper header h6 .arrowThree {
 body .outWrap .wrapper header h2 {
   opacity: 1;
   position: relative;
-  font-size: 4.5vw;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
@@ -448,13 +430,11 @@ body .outWrap .wrapper header h2 {
           animation-name: dropinTandom;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  line-height: 3rem;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
 }
 
 body .outWrap .wrapper header h2 .bubbly-animate {
-  font-size: 2.5vw;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
@@ -472,7 +452,6 @@ body .outWrap .wrapper header h2 .bubbly-animate {
 }
 
 body .outWrap .wrapper header h2 .bubbly-animate span {
-  font-size: 2.5vw;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
@@ -493,11 +472,6 @@ body .outWrap .wrapper header h2 .bubbly-animate span {
 body .outWrap .wrapper header h2 .bubbly-animate .purple.keyword {
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
-  font-size: 2.5vw;
-}
-
-body .outWrap .wrapper header h2 span {
-  font-size: 2.5vw;
 }
 
 body .outWrap .wrapper header .world, body .outWrap .wrapper header .worldClouds {
@@ -723,14 +697,14 @@ body .outWrap .wrapper section .asteroids.three {
           animation-duration: 10s;
 }
 
-body .outWrap .wrapper #followWrapper2, body .outWrap .wrapper #followWrapper3, body .outWrap .wrapper #followWrapper3, body .outWrap .wrapper #followWrapper4, body .outWrap .wrapper #followWrapper5 {
-  padding-top: 2vw;
+body .outWrap .wrapper header, body .outWrap .wrapper #followWrapper2, body .outWrap .wrapper #followWrapper3, body .outWrap .wrapper #followWrapper3, body .outWrap .wrapper #followWrapper4, body .outWrap .wrapper #followWrapper5 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding: 4vw 0vw;
 }
 
-body .outWrap .wrapper #followWrapper2 .mars, body .outWrap .wrapper #followWrapper3 .mars, body .outWrap .wrapper #followWrapper3 .mars, body .outWrap .wrapper #followWrapper4 .mars, body .outWrap .wrapper #followWrapper5 .mars {
+body .outWrap .wrapper header .mars, body .outWrap .wrapper #followWrapper2 .mars, body .outWrap .wrapper #followWrapper3 .mars, body .outWrap .wrapper #followWrapper3 .mars, body .outWrap .wrapper #followWrapper4 .mars, body .outWrap .wrapper #followWrapper5 .mars {
   position: absolute;
   -webkit-animation-name: xMovement;
           animation-name: xMovement;
@@ -747,12 +721,12 @@ body .outWrap .wrapper #followWrapper2 .mars, body .outWrap .wrapper #followWrap
   z-index: -100;
 }
 
-body .outWrap .wrapper #followWrapper2 h1, body .outWrap .wrapper #followWrapper2 h2, body .outWrap .wrapper #followWrapper3 h1, body .outWrap .wrapper #followWrapper3 h2, body .outWrap .wrapper #followWrapper3 h1, body .outWrap .wrapper #followWrapper3 h2, body .outWrap .wrapper #followWrapper4 h1, body .outWrap .wrapper #followWrapper4 h2, body .outWrap .wrapper #followWrapper5 h1, body .outWrap .wrapper #followWrapper5 h2 {
-  font-size: 2vw;
+body .outWrap .wrapper header h1, body .outWrap .wrapper header h2, body .outWrap .wrapper #followWrapper2 h1, body .outWrap .wrapper #followWrapper2 h2, body .outWrap .wrapper #followWrapper3 h1, body .outWrap .wrapper #followWrapper3 h2, body .outWrap .wrapper #followWrapper3 h1, body .outWrap .wrapper #followWrapper3 h2, body .outWrap .wrapper #followWrapper4 h1, body .outWrap .wrapper #followWrapper4 h2, body .outWrap .wrapper #followWrapper5 h1, body .outWrap .wrapper #followWrapper5 h2 {
+  font-size: 1.5vw;
   text-shadow: 0 0 2rem black;
 }
 
-body .outWrap .wrapper #followWrapper2 .row, body .outWrap .wrapper #followWrapper3 .row, body .outWrap .wrapper #followWrapper3 .row, body .outWrap .wrapper #followWrapper4 .row, body .outWrap .wrapper #followWrapper5 .row {
+body .outWrap .wrapper header .row, body .outWrap .wrapper #followWrapper2 .row, body .outWrap .wrapper #followWrapper3 .row, body .outWrap .wrapper #followWrapper3 .row, body .outWrap .wrapper #followWrapper4 .row, body .outWrap .wrapper #followWrapper5 .row {
   width: 100%;
   height: auto !important;
   display: -webkit-box;
@@ -773,19 +747,16 @@ body .outWrap .wrapper #followWrapper2 .row, body .outWrap .wrapper #followWrapp
           justify-content: space-evenly;
 }
 
-body .outWrap .wrapper #followWrapper2 .row .marsp, body .outWrap .wrapper #followWrapper3 .row .marsp, body .outWrap .wrapper #followWrapper3 .row .marsp, body .outWrap .wrapper #followWrapper4 .row .marsp, body .outWrap .wrapper #followWrapper5 .row .marsp {
+body .outWrap .wrapper header .row .marsp, body .outWrap .wrapper #followWrapper2 .row .marsp, body .outWrap .wrapper #followWrapper3 .row .marsp, body .outWrap .wrapper #followWrapper3 .row .marsp, body .outWrap .wrapper #followWrapper4 .row .marsp, body .outWrap .wrapper #followWrapper5 .row .marsp {
   text-shadow: 0rem 0rem .6rem black;
   background-color: rgba(24, 4, 44, 0.558);
   -webkit-box-shadow: inset 0 0 .5rem pink;
           box-shadow: inset 0 0 .5rem pink;
   width: 40%;
-  padding: 1vw;
   border-radius: 1rem;
-  margin-right: 12vw;
 }
 
-body .outWrap .wrapper #followWrapper2 .row .creativePiece, body .outWrap .wrapper #followWrapper3 .row .creativePiece, body .outWrap .wrapper #followWrapper3 .row .creativePiece, body .outWrap .wrapper #followWrapper4 .row .creativePiece, body .outWrap .wrapper #followWrapper5 .row .creativePiece {
-  margin-bottom: 4vw;
+body .outWrap .wrapper header .row .creativePiece, body .outWrap .wrapper #followWrapper2 .row .creativePiece, body .outWrap .wrapper #followWrapper3 .row .creativePiece, body .outWrap .wrapper #followWrapper3 .row .creativePiece, body .outWrap .wrapper #followWrapper4 .row .creativePiece, body .outWrap .wrapper #followWrapper5 .row .creativePiece {
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
   line-height: 1.75;
@@ -796,23 +767,23 @@ body .outWrap .wrapper #followWrapper2 .row .creativePiece, body .outWrap .wrapp
           box-shadow: inset 0 0 .5rem pink;
 }
 
-body .outWrap .wrapper #followWrapper2 .row .creativePiece *, body .outWrap .wrapper #followWrapper3 .row .creativePiece *, body .outWrap .wrapper #followWrapper3 .row .creativePiece *, body .outWrap .wrapper #followWrapper4 .row .creativePiece *, body .outWrap .wrapper #followWrapper5 .row .creativePiece * {
+body .outWrap .wrapper header .row .creativePiece *, body .outWrap .wrapper #followWrapper2 .row .creativePiece *, body .outWrap .wrapper #followWrapper3 .row .creativePiece *, body .outWrap .wrapper #followWrapper3 .row .creativePiece *, body .outWrap .wrapper #followWrapper4 .row .creativePiece *, body .outWrap .wrapper #followWrapper5 .row .creativePiece * {
   font-size: 1.25vw;
 }
 
-body .outWrap .wrapper #followWrapper2 .row .creativePiece:hover, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover, body .outWrap .wrapper #followWrapper4 .row .creativePiece:hover, body .outWrap .wrapper #followWrapper5 .row .creativePiece:hover {
+body .outWrap .wrapper header .row .creativePiece:hover, body .outWrap .wrapper #followWrapper2 .row .creativePiece:hover, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover, body .outWrap .wrapper #followWrapper4 .row .creativePiece:hover, body .outWrap .wrapper #followWrapper5 .row .creativePiece:hover {
   text-shadow: none;
 }
 
-body .outWrap .wrapper #followWrapper2 .row .creativePiece:hover .gogreen, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover .gogreen, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover .gogreen, body .outWrap .wrapper #followWrapper4 .row .creativePiece:hover .gogreen, body .outWrap .wrapper #followWrapper5 .row .creativePiece:hover .gogreen {
+body .outWrap .wrapper header .row .creativePiece:hover .gogreen, body .outWrap .wrapper #followWrapper2 .row .creativePiece:hover .gogreen, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover .gogreen, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover .gogreen, body .outWrap .wrapper #followWrapper4 .row .creativePiece:hover .gogreen, body .outWrap .wrapper #followWrapper5 .row .creativePiece:hover .gogreen {
   color: lime !important;
 }
 
-body .outWrap .wrapper #followWrapper2 .row .creativePiece:hover *, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover *, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover *, body .outWrap .wrapper #followWrapper4 .row .creativePiece:hover *, body .outWrap .wrapper #followWrapper5 .row .creativePiece:hover * {
+body .outWrap .wrapper header .row .creativePiece:hover *, body .outWrap .wrapper #followWrapper2 .row .creativePiece:hover *, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover *, body .outWrap .wrapper #followWrapper3 .row .creativePiece:hover *, body .outWrap .wrapper #followWrapper4 .row .creativePiece:hover *, body .outWrap .wrapper #followWrapper5 .row .creativePiece:hover * {
   text-shadow: none !important;
 }
 
-body .outWrap .wrapper #followWrapper2 .row p, body .outWrap .wrapper #followWrapper3 .row p, body .outWrap .wrapper #followWrapper3 .row p, body .outWrap .wrapper #followWrapper4 .row p, body .outWrap .wrapper #followWrapper5 .row p {
+body .outWrap .wrapper header .row p, body .outWrap .wrapper #followWrapper2 .row p, body .outWrap .wrapper #followWrapper3 .row p, body .outWrap .wrapper #followWrapper3 .row p, body .outWrap .wrapper #followWrapper4 .row p, body .outWrap .wrapper #followWrapper5 .row p {
   text-shadow: 0 0 .3rem black;
   width: 50%;
   padding: 0% 11%;
@@ -828,7 +799,7 @@ body .outWrap .wrapper #followWrapper2 .row p, body .outWrap .wrapper #followWra
   z-index: 100;
 }
 
-body .outWrap .wrapper #followWrapper2 .row .mp, body .outWrap .wrapper #followWrapper3 .row .mp, body .outWrap .wrapper #followWrapper3 .row .mp, body .outWrap .wrapper #followWrapper4 .row .mp, body .outWrap .wrapper #followWrapper5 .row .mp {
+body .outWrap .wrapper header .row .mp, body .outWrap .wrapper #followWrapper2 .row .mp, body .outWrap .wrapper #followWrapper3 .row .mp, body .outWrap .wrapper #followWrapper3 .row .mp, body .outWrap .wrapper #followWrapper4 .row .mp, body .outWrap .wrapper #followWrapper5 .row .mp {
   display: inline;
   height: auto;
   text-shadow: 0rem 0rem .6rem black;
@@ -841,11 +812,11 @@ body .outWrap .wrapper #followWrapper2 .row .mp, body .outWrap .wrapper #followW
   z-index: 100;
 }
 
-body .outWrap .wrapper #followWrapper2 h1, body .outWrap .wrapper #followWrapper3 h1, body .outWrap .wrapper #followWrapper3 h1, body .outWrap .wrapper #followWrapper4 h1, body .outWrap .wrapper #followWrapper5 h1 {
+body .outWrap .wrapper header h1, body .outWrap .wrapper #followWrapper2 h1, body .outWrap .wrapper #followWrapper3 h1, body .outWrap .wrapper #followWrapper3 h1, body .outWrap .wrapper #followWrapper4 h1, body .outWrap .wrapper #followWrapper5 h1 {
   text-shadow: 0 0 .3rem black;
 }
 
-body .outWrap .wrapper #followWrapper2 ul, body .outWrap .wrapper #followWrapper3 ul, body .outWrap .wrapper #followWrapper3 ul, body .outWrap .wrapper #followWrapper4 ul, body .outWrap .wrapper #followWrapper5 ul {
+body .outWrap .wrapper header ul, body .outWrap .wrapper #followWrapper2 ul, body .outWrap .wrapper #followWrapper3 ul, body .outWrap .wrapper #followWrapper3 ul, body .outWrap .wrapper #followWrapper4 ul, body .outWrap .wrapper #followWrapper5 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -870,7 +841,7 @@ body .outWrap .wrapper #followWrapper2 ul, body .outWrap .wrapper #followWrapper
   z-index: 6;
 }
 
-body .outWrap .wrapper #followWrapper2 ul li, body .outWrap .wrapper #followWrapper3 ul li, body .outWrap .wrapper #followWrapper3 ul li, body .outWrap .wrapper #followWrapper4 ul li, body .outWrap .wrapper #followWrapper5 ul li {
+body .outWrap .wrapper header ul li, body .outWrap .wrapper #followWrapper2 ul li, body .outWrap .wrapper #followWrapper3 ul li, body .outWrap .wrapper #followWrapper3 ul li, body .outWrap .wrapper #followWrapper4 ul li, body .outWrap .wrapper #followWrapper5 ul li {
   cursor: none !important;
   font-size: 1.2vw;
   padding: .5rem;
@@ -882,15 +853,15 @@ body .outWrap .wrapper #followWrapper2 ul li, body .outWrap .wrapper #followWrap
   transition: all ease .5s;
 }
 
-body .outWrap .wrapper #followWrapper2 ul li:hover, body .outWrap .wrapper #followWrapper3 ul li:hover, body .outWrap .wrapper #followWrapper3 ul li:hover, body .outWrap .wrapper #followWrapper4 ul li:hover, body .outWrap .wrapper #followWrapper5 ul li:hover {
+body .outWrap .wrapper header ul li:hover, body .outWrap .wrapper #followWrapper2 ul li:hover, body .outWrap .wrapper #followWrapper3 ul li:hover, body .outWrap .wrapper #followWrapper3 ul li:hover, body .outWrap .wrapper #followWrapper4 ul li:hover, body .outWrap .wrapper #followWrapper5 ul li:hover {
   background-color: #6f1a96;
 }
 
-body .outWrap .wrapper #followWrapper2 ul li:hover span, body .outWrap .wrapper #followWrapper3 ul li:hover span, body .outWrap .wrapper #followWrapper3 ul li:hover span, body .outWrap .wrapper #followWrapper4 ul li:hover span, body .outWrap .wrapper #followWrapper5 ul li:hover span {
+body .outWrap .wrapper header ul li:hover span, body .outWrap .wrapper #followWrapper2 ul li:hover span, body .outWrap .wrapper #followWrapper3 ul li:hover span, body .outWrap .wrapper #followWrapper3 ul li:hover span, body .outWrap .wrapper #followWrapper4 ul li:hover span, body .outWrap .wrapper #followWrapper5 ul li:hover span {
   color: lime !important;
 }
 
-body .outWrap .wrapper #followWrapper2 ul .previews, body .outWrap .wrapper #followWrapper3 ul .previews, body .outWrap .wrapper #followWrapper3 ul .previews, body .outWrap .wrapper #followWrapper4 ul .previews, body .outWrap .wrapper #followWrapper5 ul .previews {
+body .outWrap .wrapper header ul .previews, body .outWrap .wrapper #followWrapper2 ul .previews, body .outWrap .wrapper #followWrapper3 ul .previews, body .outWrap .wrapper #followWrapper3 ul .previews, body .outWrap .wrapper #followWrapper4 ul .previews, body .outWrap .wrapper #followWrapper5 ul .previews {
   opacity: .6;
   width: 10vw;
   height: 6vw;
@@ -916,7 +887,7 @@ body .outWrap .wrapper #followWrapper2 ul .previews, body .outWrap .wrapper #fol
   position: relative;
 }
 
-body .outWrap .wrapper #followWrapper2 ul .previews a, body .outWrap .wrapper #followWrapper3 ul .previews a, body .outWrap .wrapper #followWrapper3 ul .previews a, body .outWrap .wrapper #followWrapper4 ul .previews a, body .outWrap .wrapper #followWrapper5 ul .previews a {
+body .outWrap .wrapper header ul .previews a, body .outWrap .wrapper #followWrapper2 ul .previews a, body .outWrap .wrapper #followWrapper3 ul .previews a, body .outWrap .wrapper #followWrapper3 ul .previews a, body .outWrap .wrapper #followWrapper4 ul .previews a, body .outWrap .wrapper #followWrapper5 ul .previews a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -938,7 +909,7 @@ body .outWrap .wrapper #followWrapper2 ul .previews a, body .outWrap .wrapper #f
   cursor: none;
 }
 
-body .outWrap .wrapper #followWrapper2 ul .previews a img, body .outWrap .wrapper #followWrapper3 ul .previews a img, body .outWrap .wrapper #followWrapper3 ul .previews a img, body .outWrap .wrapper #followWrapper4 ul .previews a img, body .outWrap .wrapper #followWrapper5 ul .previews a img {
+body .outWrap .wrapper header ul .previews a img, body .outWrap .wrapper #followWrapper2 ul .previews a img, body .outWrap .wrapper #followWrapper3 ul .previews a img, body .outWrap .wrapper #followWrapper3 ul .previews a img, body .outWrap .wrapper #followWrapper4 ul .previews a img, body .outWrap .wrapper #followWrapper5 ul .previews a img {
   -webkit-transition: all ease 0.25s !important;
   transition: all ease 0.25s !important;
   width: 105%;
@@ -947,16 +918,20 @@ body .outWrap .wrapper #followWrapper2 ul .previews a img, body .outWrap .wrappe
   cursor: none;
 }
 
-body .outWrap .wrapper #followWrapper2 ul .previews:hover, body .outWrap .wrapper #followWrapper3 ul .previews:hover, body .outWrap .wrapper #followWrapper3 ul .previews:hover, body .outWrap .wrapper #followWrapper4 ul .previews:hover, body .outWrap .wrapper #followWrapper5 ul .previews:hover {
+body .outWrap .wrapper header ul .previews:hover, body .outWrap .wrapper #followWrapper2 ul .previews:hover, body .outWrap .wrapper #followWrapper3 ul .previews:hover, body .outWrap .wrapper #followWrapper3 ul .previews:hover, body .outWrap .wrapper #followWrapper4 ul .previews:hover, body .outWrap .wrapper #followWrapper5 ul .previews:hover {
   opacity: 1;
   background: rgba(111, 26, 150, 0.582);
   -webkit-box-shadow: 0rem 0rem 1rem black;
           box-shadow: 0rem 0rem 1rem black;
 }
 
-body .outWrap .wrapper #followWrapper2 ul .previews ::after, body .outWrap .wrapper #followWrapper3 ul .previews ::after, body .outWrap .wrapper #followWrapper3 ul .previews ::after, body .outWrap .wrapper #followWrapper4 ul .previews ::after, body .outWrap .wrapper #followWrapper5 ul .previews ::after {
+body .outWrap .wrapper header ul .previews ::after, body .outWrap .wrapper #followWrapper2 ul .previews ::after, body .outWrap .wrapper #followWrapper3 ul .previews ::after, body .outWrap .wrapper #followWrapper3 ul .previews ::after, body .outWrap .wrapper #followWrapper4 ul .previews ::after, body .outWrap .wrapper #followWrapper5 ul .previews ::after {
   position: absolute;
   color: lime !important;
+}
+
+body .outWrap .wrapper #followWrapper2 .row {
+  margin: 4.25vw 0vw;
 }
 
 body .outWrap .wrapper #followWrapper3 .lightbox {
@@ -1026,12 +1001,7 @@ body .outWrap .wrapper #followWrapper3 .mars {
 }
 
 body .outWrap .wrapper #followWrapper3 h2 {
-  font-size: 2vw;
   text-shadow: 0 0 .75rem black;
-}
-
-body .outWrap .wrapper #followWrapper3 ul {
-  margin-top: -4vw;
 }
 
 body .outWrap .wrapper #followWrapper3 ul li {
@@ -1039,7 +1009,6 @@ body .outWrap .wrapper #followWrapper3 ul li {
 }
 
 body .outWrap .wrapper #followWrapper3 p {
-  margin-top: -4vw;
   text-shadow: 0 0 .75rem black;
 }
 
@@ -1057,7 +1026,7 @@ body .outWrap .wrapper #followWrapper3 .row {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 1vw 0vw;
+  margin: 5vw 0vw;
   padding-left: 11vw;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -1115,13 +1084,6 @@ body .outWrap .wrapper #followWrapper3 .gitlink span:active {
   color: lime !important;
 }
 
-body .outWrap .wrapper #followWrapper4 {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 3.75vw;
-}
-
 body .outWrap .wrapper #followWrapper4 .planet_jupiter {
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
@@ -1155,6 +1117,7 @@ body .outWrap .wrapper #followWrapper4 .row {
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
+  margin: 5.5vw 0vw;
 }
 
 body .outWrap .wrapper #followWrapper4 .row .creativePiece {
@@ -1187,7 +1150,6 @@ body .outWrap .wrapper #followWrapper4 h1 {
   text-shadow: 0 0 1rem black;
   font-size: 2vw;
   z-index: 1 !important;
-  margin-bottom: 1VW;
 }
 
 body .outWrap .wrapper #followWrapper4 ol {
@@ -1217,7 +1179,6 @@ body .outWrap .wrapper #followWrapper4 ol li {
           animation-fill-mode: forwards;
   -webkit-animation-duration: 20s;
           animation-duration: 20s;
-  margin-top: -4vw;
 }
 
 body .outWrap .wrapper #followWrapper4 ol li a {
@@ -1310,7 +1271,6 @@ body .outWrap .wrapper #followWrapper5 .sat.ring {
 
 body .outWrap .wrapper #followWrapper5 h2 {
   z-index: 5;
-  margin-top: 2vw;
   width: 75%;
   text-align: center;
 }
@@ -1332,6 +1292,9 @@ body .outWrap .wrapper #followWrapper5 .row {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 body .outWrap .wrapper #followWrapper5 .row * {
@@ -1340,12 +1303,13 @@ body .outWrap .wrapper #followWrapper5 .row * {
 
 body .outWrap .wrapper #followWrapper5 .row p {
   z-index: 7 !important;
-  width: 40%;
+  width: 35%;
   z-index: 100;
-  margin-top: -5vw;
   background-color: rgba(24, 4, 44, 0.558);
   -webkit-box-shadow: inset 0 0 .5rem pink;
           box-shadow: inset 0 0 .5rem pink;
+  margin-top: 2rem;
+  width: 35%;
 }
 
 body .outWrap .wrapper #followWrapper5 .row .mainform {
@@ -1900,9 +1864,6 @@ body #siteStartUp h4 {
   }
   header h6, header h2 {
     width: 70% !important;
-  }
-  #followWrapper2, #followWrapper3, #followWrapper4, #followWrapper5 {
-    padding-top: 7vw !important;
   }
   #followWrapper2 h1, #followWrapper2 h2, #followWrapper3 h1, #followWrapper3 h2, #followWrapper4 h1, #followWrapper4 h2, #followWrapper5 h1, #followWrapper5 h2 {
     width: 90%;
