@@ -110,13 +110,8 @@ let jellySHOOT = {
     },
 
     setCursorPosition(div){
-
-        // div.style.position = 'absolute';
-
         div.style.top = `${this.yAxis}px `;
-
         div.style.left = `${this.xAxis}px `;
-
     },
 
     clearCursorPosition(div){
@@ -344,7 +339,7 @@ let jellySHOOT = {
                             lightboxObj.displayBox();
                             lightboxObj.growSize();
                             img.style.transform = '';
-                            let path1='https://varep.net/newfront';
+                            let path1='https://varep.net/';
                             let path2='https://jacobmoya.com/projects/revisedwebsitebackup/index.html';
                             let path3='https://jacobmoya.com/projects/mancalajs/index.html';
                             let path4='https://jacobmoya.com/projects/photodesignsite/index.html';

@@ -297,7 +297,7 @@ body .outWrap .wrapper header {
 }
 
 body .outWrap .wrapper header .logoContainerAnimator {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,8 +337,6 @@ body .outWrap .wrapper header .logoContainerAnimator #mainLogo {
 
 body .outWrap .wrapper header .logoContainerAnimator p {
   position: relative;
-  margin: 0px 16%;
-  margin-left: 8%;
   font-size: 1.25vw;
   -webkit-transition-delay: .5s;
           transition-delay: .5s;
@@ -752,7 +750,7 @@ body .outWrap .wrapper header .row .marsp, body .outWrap .wrapper #followWrapper
   background-color: rgba(24, 4, 44, 0.558);
   -webkit-box-shadow: inset 0 0 .5rem pink;
           box-shadow: inset 0 0 .5rem pink;
-  width: 40%;
+  width: 30%;
   border-radius: 1rem;
 }
 
@@ -1027,7 +1025,6 @@ body .outWrap .wrapper #followWrapper3 .row {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 5vw 0vw;
-  padding-left: 11vw;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
