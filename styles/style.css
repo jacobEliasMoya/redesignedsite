@@ -61,7 +61,7 @@ html {
 
 body {
   width: auto;
-  height: 100vh;
+  height: auto;
   background: none;
   background-attachment: fixed;
   background-position: left top;
@@ -878,7 +878,7 @@ body .outWrap .wrapper header ul .previews, body .outWrap .wrapper #followWrappe
           flex-direction: column;
   cursor: none !important;
   overflow: hidden;
-  background: #9D27D4 !important;
+  background: #9D27D4;
   -webkit-transform: rotateY("0deg");
           transform: rotateY("0deg");
   z-index: 6;
@@ -905,15 +905,17 @@ body .outWrap .wrapper header ul .previews a, body .outWrap .wrapper #followWrap
   transition: all ease .25s !important;
   overflow: hidden;
   cursor: none;
+  position: relative;
 }
 
 body .outWrap .wrapper header ul .previews a img, body .outWrap .wrapper #followWrapper2 ul .previews a img, body .outWrap .wrapper #followWrapper3 ul .previews a img, body .outWrap .wrapper #followWrapper3 ul .previews a img, body .outWrap .wrapper #followWrapper4 ul .previews a img, body .outWrap .wrapper #followWrapper5 ul .previews a img {
   -webkit-transition: all ease 0.25s !important;
   transition: all ease 0.25s !important;
-  width: 105%;
-  height: inherit;
-  height: inherit;
+  width: 90%;
+  height: 90%;
   cursor: none;
+  border-radius: .5rem;
+  position: absolute;
 }
 
 body .outWrap .wrapper header ul .previews:hover, body .outWrap .wrapper #followWrapper2 ul .previews:hover, body .outWrap .wrapper #followWrapper3 ul .previews:hover, body .outWrap .wrapper #followWrapper3 ul .previews:hover, body .outWrap .wrapper #followWrapper4 ul .previews:hover, body .outWrap .wrapper #followWrapper5 ul .previews:hover {
@@ -1337,7 +1339,6 @@ body .outWrap .wrapper #followWrapper5 .row .mainform input, body .outWrap .wrap
   background-color: rgba(24, 4, 44, 0.558);
   color: lime;
   text-align: center;
-  padding: .75vw;
   border: none;
   border-radius: .5rem;
   -webkit-box-shadow: inset 0 0 .5rem pink;
@@ -1352,28 +1353,28 @@ body .outWrap .wrapper #followWrapper5 .row .mainform input::-webkit-input-place
   -webkit-transition: all ease .25s;
   transition: all ease .25s;
   font-size: .75vw;
-  color: #3e3e3e;
+  color: white;
 }
 
 body .outWrap .wrapper #followWrapper5 .row .mainform input:-ms-input-placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea:-ms-input-placeholder {
   -webkit-transition: all ease .25s;
   transition: all ease .25s;
   font-size: .75vw;
-  color: #3e3e3e;
+  color: white;
 }
 
 body .outWrap .wrapper #followWrapper5 .row .mainform input::-ms-input-placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea::-ms-input-placeholder {
   -webkit-transition: all ease .25s;
   transition: all ease .25s;
   font-size: .75vw;
-  color: #3e3e3e;
+  color: white;
 }
 
 body .outWrap .wrapper #followWrapper5 .row .mainform input::placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea::placeholder {
   -webkit-transition: all ease .25s;
   transition: all ease .25s;
   font-size: .75vw;
-  color: #3e3e3e;
+  color: white;
 }
 
 body .outWrap .wrapper #followWrapper5 .row .mainform input:hover, body .outWrap .wrapper #followWrapper5 .row .mainform textarea:hover {
@@ -1381,19 +1382,19 @@ body .outWrap .wrapper #followWrapper5 .row .mainform input:hover, body .outWrap
 }
 
 body .outWrap .wrapper #followWrapper5 .row .mainform input:hover::-webkit-input-placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea:hover::-webkit-input-placeholder {
-  color: white;
+  color: rgba(255, 255, 255, 0.411);
 }
 
 body .outWrap .wrapper #followWrapper5 .row .mainform input:hover:-ms-input-placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea:hover:-ms-input-placeholder {
-  color: white;
+  color: rgba(255, 255, 255, 0.411);
 }
 
 body .outWrap .wrapper #followWrapper5 .row .mainform input:hover::-ms-input-placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea:hover::-ms-input-placeholder {
-  color: white;
+  color: rgba(255, 255, 255, 0.411);
 }
 
 body .outWrap .wrapper #followWrapper5 .row .mainform input:hover::placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea:hover::placeholder {
-  color: white;
+  color: rgba(255, 255, 255, 0.411);
 }
 
 body .outWrap .wrapper #followWrapper5 .row .mainform textarea {
@@ -1411,6 +1412,31 @@ body .outWrap .wrapper #followWrapper5 .row .mainform textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 5vw;
+  padding-top: 2vw !important;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform textarea::-webkit-input-placeholder {
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  margin-top: 1rem !important;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform textarea:-ms-input-placeholder {
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  margin-top: 1rem !important;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform textarea::-ms-input-placeholder {
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  margin-top: 1rem !important;
+}
+
+body .outWrap .wrapper #followWrapper5 .row .mainform textarea::placeholder {
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  margin-top: 1rem !important;
 }
 
 body .outWrap .wrapper #followWrapper5 .row .mainform .submit {
@@ -1813,6 +1839,9 @@ body #siteStartUp h4 {
 }
 
 @media screen and (max-width: 500px) {
+  .responsivefontsizeP.main {
+    width: 90% !important;
+  }
   menu {
     display: none !important;
   }
@@ -1830,7 +1859,7 @@ body #siteStartUp h4 {
     line-height: 1.5;
   }
   header .logoContainerAnimator {
-    margin: 34.5vw 0vw !important;
+    margin: 37vw 0vw !important;
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
@@ -1843,7 +1872,7 @@ body #siteStartUp h4 {
     font-size: 4vw !important;
   }
   header .logoContainerAnimator img {
-    width: 35% !important;
+    width: 15% !important;
     border: 1.25vw solid #9d27d4 !important;
   }
   header h2, header h6 {
@@ -1920,6 +1949,7 @@ body #siteStartUp h4 {
             flex-direction: row;
   }
   #responsiveflexcol2 .creativePiece.prev.responsivefontsizeP {
+    margin-bottom: 2vw !important;
     width: 150% !important;
   }
   #responsiveflexcol2 .creativePiece.prev.responsivefontsizeP span {
@@ -1982,8 +2012,8 @@ body #siteStartUp h4 {
   #responsiveflexcol p {
     width: 71% !important;
     text-align: center;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
+    margin-top: 1vw !important;
+    margin-bottom: 1rem !important;
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
@@ -2003,18 +2033,22 @@ body #siteStartUp h4 {
     border-radius: 0rem !important;
     line-height: 1.25;
   }
+  .responsivefontsizeP {
+    padding: 1rem !important;
+  }
   #followWrapper5 {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
   }
   #followWrapper5 h2 {
-    padding-top: 6.5vw !important;
+    padding: 6.5vw 0vw !important;
     font-size: 5vw !important;
   }
   #followWrapper5 .row .responsivefontsizeP {
     font-size: 3vw !important;
     line-height: 1.25 !important;
+    text-align: center !important;
   }
   #followWrapper5 .row .responsivefontsizeP span {
     font-size: 3vw !important;
@@ -2074,6 +2108,12 @@ body #siteStartUp h4 {
   #followWrapper3 {
     margin-top: 1.75vw !important;
   }
+  #followWrapper3 h2 {
+    margin-top: 5vw !important;
+  }
+  #followWrapper3 ul li {
+    width: 80% !important;
+  }
   #siteStartUp img {
     width: 75vw !important;
     height: 75vw !important;
@@ -2083,6 +2123,75 @@ body #siteStartUp h4 {
   }
   #siteStartUp h4 {
     bottom: 15% !important;
+  }
+  #fontsizefixcreative span {
+    font-size: .75rem !important;
+  }
+  #followWrapper4 h2 {
+    margin-top: -8vw !important;
+  }
+  #followWrapper4 ol {
+    width: 40% !important;
+  }
+  #followWrapper4 ol li {
+    margin: 0% 0% !important;
+  }
+  #followWrapper4 ol li a {
+    font-size: 2vw !important;
+  }
+  #followWrapper4 ol li a img {
+    width: 15vw !important;
+  }
+  #followWrapper2 ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: .5rem !important;
+  }
+  .responsivefontsizeP:not(.exclude) {
+    background-color: rgba(24, 4, 44, 0) !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  .gitlink {
+    margin-top: 15vw !important;
+  }
+  .gitlink img {
+    width: 200% !important;
+  }
+  input, textarea {
+    font-size: 2vw !important;
+  }
+  #followWrapper5 h2 {
+    padding: 2vw 0vw !important;
+  }
+  #followWrapper2 h2 {
+    margin-top: -2.5vw !important;
+  }
+  header h2 {
+    margin-top: -2vw !important;
+  }
+  .previews {
+    background: none !important;
+    opacity: 1 !important;
+  }
+  .previews a img {
+    -webkit-box-shadow: 0 0 1rem #9D27D4 !important;
+            box-shadow: 0 0 1rem #9D27D4 !important;
+    height: 100% !important;
+  }
+  .creativePiece {
+    line-height: 1 !important;
   }
 }
 
