@@ -1,0 +1,212 @@
+@mixin animationInfo{
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    
+}
+
+// DONT TOUCH
+@mixin flexCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+// DONT TOUCH
+@mixin flexRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+// DONT TOUCH
+@mixin parralax {
+    background-attachment: fixed;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+// DONT TOUCH
+@mixin fullScreener {
+    height: 100vh;
+    width: 100vw;
+}
+// DONT TOUCH
+@mixin animationInfo{
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    
+}
+// DONT TOUCH
+@mixin absCentered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+*{
+    padding: none;
+    margin: none;
+}
+body{
+    overflow: hidden !important;
+    padding: none;
+    margin: none;
+    height: 97vh;
+    width: 97%;
+    background-image: url('../customPhotos/mainbkrnd2bh.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+    background-size: 100vw 100vh;
+
+    menu{
+        @include flexCol();
+        z-index: 1;
+        width: 100vw;
+        height: 2rem;
+        position: fixed;
+        top:0;
+        // DONT TOUCH
+        .mainUL{
+            position: relative;
+            @include flexRow();
+            justify-content: space-evenly;
+            width: 100%;
+            height: inherit;
+            list-style: none;
+            overflow: visible;
+            z-index: -100;
+
+
+            *{
+                transition: all ease .25s;
+            }
+            // DONT TOUCH
+            li{
+
+                overflow: hidden;
+                height: auto;
+                min-width: 10%;
+                width: auto;
+                color: black;
+                font-size: 1.25vw !important;
+                cursor: pointer;
+                color: white;
+                border-bottom-right-radius: .5rem;
+                border-bottom-left-radius: .5rem;
+                background: rgba(157, 39, 212, 0.267);
+                transition: all ease .25s;
+                // border-bottom: .1rem solid rgb(157, 39, 212);
+                // DONT TOUCH
+                &:hover{
+                    color: lime;
+                    background: rgb(111, 26, 150);
+                    a{
+                        color: lime;
+                        padding-top: 2.5vw !important;
+                        padding-bottom: 1.25vw;
+                    }
+                }
+                a{
+                    @include flexCol();
+                    padding: 1.25vw;
+                    padding-top: 2.25vw !important;
+                    padding-bottom: 1vw;
+                    position: relative;
+                    text-decoration: none;
+                    color: white;
+                    img{
+                        
+                        margin-top: .6vw;
+                        width: 35%;
+                    }
+                }
+
+                .coin{
+                    min-width: 5% !important;
+                    @include flexCol();
+                    
+                    img{
+                        @include absCentered();
+                        position: absolute;
+                        width: 3vw;
+
+                    }
+                    &:hover{
+                        img{
+                            width: 3.25vw;
+                        }
+                    }
+                }
+
+            }
+            .paddingfx{
+                min-width: 5%;
+            }
+        }
+    }
+
+    h1{
+        font-size: 4vw;
+        transition: all ease 10s;
+        margin: 10vw 0vw;
+
+    }
+    h3{
+        font-size: 3vw;
+        transition: all ease 10s;
+        margin: 10vw 0vw;
+
+    }
+    
+    img{
+        position: absolute;
+        @include animationInfo();
+
+    }
+
+    .outer{
+        animation: rotation 5s infinite linear;
+        width: 45%;
+
+    }
+    .inner{
+        animation: rotation 2s infinite linear;
+        width: 40%;
+
+
+    }
+    .center{
+        animation: rotation .25s infinite linear;
+        width: 22%;
+
+
+    } 
+    *{
+        padding: none;
+        margin: none;
+    }
+    .smallFont{
+        font-size: 0vw !important;
+        margin: 0vw 0vw !important;
+    }
+    .centerJustify{
+        justify-content: center !important;    
+    }
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+

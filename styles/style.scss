@@ -95,7 +95,7 @@ body{
     height: 100vh;
     background: none;
     @include parralax();
-    background-image: url('./customPhotos/mainbkrnd.png');
+    background-image: url('../customPhotos/mainbkrnd.png');
     overflow: visible;
     position: relative;
     // DONT TOUCH
@@ -682,7 +682,7 @@ body{
                         height: 0vh;
                         @include absCentered();
                         border-bottom: 5vw solid rgba(157, 39, 212, 0.322) !important;
-                        background:url('./customPhotos/loading.gif');
+                        background:url('../customPhotos/loading.gif');
                         background-size: 4rem 3.75rem;
                         background-color: black;
                         background-repeat: no-repeat;
@@ -900,7 +900,7 @@ body{
                 .row{
                     @include flexRow();
                     justify-content: space-evenly;
-                    align-items: flex-start;
+                    align-items: center;
                     *{
                         font-size: 1.25vw;
                     }
@@ -910,8 +910,8 @@ body{
                         z-index: 100;
                         background-color: rgba(24, 4, 44, 0.558);
                         box-shadow: inset 0 0 .5rem pink;
-                        margin-top: 2rem;
                         width: 35%;
+                        margin-bottom: 3vw;
 
                     }
                     .mainform{
@@ -964,7 +964,7 @@ body{
             width: 100vw;
             header{
                 position: relative;
-                background-image: url('./customPhotos/mainbkrnd2bh.png');
+                background-image: url('../customPhotos/mainbkrnd2bh.png');
                 background-size: cover;
 
                 
@@ -1105,7 +1105,7 @@ body{
                         height: 0vh;
                         @include absCentered();
                         border-bottom: 5vw solid rgba(157, 39, 212, 0.322) !important;
-                        background:url('./customPhotos/babyearth.png');
+                        background:url('../customPhotos/babyearth.png');
                         background-size: 4rem 3.75rem;
                         background-color: black;
                         background-repeat: no-repeat;
@@ -1454,6 +1454,7 @@ body{
     }
 
     #followWrapper5{
+        justify-content: center !important;
         h2{
             padding-top:6.5vw !important;
             font-size: 5vw !important;

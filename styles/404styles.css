@@ -1,0 +1,250 @@
+* {
+  padding: none;
+  margin: none;
+}
+
+body {
+  overflow: hidden !important;
+  padding: none;
+  margin: none;
+  height: 97vh;
+  width: 97%;
+  background-image: url("../customPhotos/mainbkrnd2bh.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Press Start 2P', cursive;
+  background-size: 100vw 100vh;
+}
+
+body menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+  width: 100vw;
+  height: 2rem;
+  position: fixed;
+  top: 0;
+}
+
+body menu .mainUL {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: inherit;
+  list-style: none;
+  overflow: visible;
+  z-index: -100;
+}
+
+body menu .mainUL * {
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+}
+
+body menu .mainUL li {
+  overflow: hidden;
+  height: auto;
+  min-width: 10%;
+  width: auto;
+  color: black;
+  font-size: 1.25vw !important;
+  cursor: pointer;
+  color: white;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  background: rgba(157, 39, 212, 0.267);
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+}
+
+body menu .mainUL li:hover {
+  color: lime;
+  background: #6f1a96;
+}
+
+body menu .mainUL li:hover a {
+  color: lime;
+  padding-top: 2.5vw !important;
+  padding-bottom: 1.25vw;
+}
+
+body menu .mainUL li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.25vw;
+  padding-top: 2.25vw !important;
+  padding-bottom: 1vw;
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+body menu .mainUL li a img {
+  margin-top: .6vw;
+  width: 35%;
+}
+
+body menu .mainUL li .coin {
+  min-width: 5% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body menu .mainUL li .coin img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  width: 3vw;
+}
+
+body menu .mainUL li .coin:hover img {
+  width: 3.25vw;
+}
+
+body menu .mainUL .paddingfx {
+  min-width: 5%;
+}
+
+body h1 {
+  font-size: 4vw;
+  -webkit-transition: all ease 10s;
+  transition: all ease 10s;
+  margin: 10vw 0vw;
+}
+
+body h3 {
+  font-size: 3vw;
+  -webkit-transition: all ease 10s;
+  transition: all ease 10s;
+  margin: 10vw 0vw;
+}
+
+body img {
+  position: absolute;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .outer {
+  -webkit-animation: rotation 5s infinite linear;
+          animation: rotation 5s infinite linear;
+  width: 45%;
+}
+
+body .inner {
+  -webkit-animation: rotation 2s infinite linear;
+          animation: rotation 2s infinite linear;
+  width: 40%;
+}
+
+body .center {
+  -webkit-animation: rotation .25s infinite linear;
+          animation: rotation .25s infinite linear;
+  width: 22%;
+}
+
+body * {
+  padding: none;
+  margin: none;
+}
+
+body .smallFont {
+  font-size: 0vw !important;
+  margin: 0vw 0vw !important;
+}
+
+body .centerJustify {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+/*# sourceMappingURL=404styles.css.map */

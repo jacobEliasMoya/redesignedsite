@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/645706501e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -80,9 +80,9 @@
 
                 <ul id="responsiveflexcol">
 
-                    <li class="previews wordpress_site" ><a href="#followWrapper3" style='padding:1vw 0rem;overflow: visible;border-radius: 1rem !important;'><img src="./customPhotos/varepMainWhite-300x109.png" alt=""></a></li>
-                    <li class="previews photo" ><a href="#followWrapper3"><img src="./customPhotos/sitePreviewPS.png" alt=""></a></li>
-                    <li class="previews mach2"><a href="#followWrapper3"><img src="./customPhotos/websitemachII.PNG" alt=""></a></li>
+                    <li class="previews wordpress_site" ><a href="#followWrapper3" style='padding:1vw 0rem;overflow: visible;border-radius: 1rem !important;'><img src="./customPhotos/preview1.png" alt=""></a></li>
+                    <li class="previews photo" ><a href="#followWrapper3"><img src="./customPhotos/preview3.png" alt=""></a></li>
+                    <li class="previews mach2"><a href="#followWrapper3"><img src="./customPhotos/preview2.png" alt=""></a></li>
                     <li class="previews mancala" ><a href="#followWrapper3"><img src="./customPhotos/sitePreviewMJS.jpg" alt=""></a></li>
 
                 </ul>
@@ -259,7 +259,7 @@
     </menu>
 
 
-    <!-- <?php if($issent) {?>
+    <?php if($issent) {?>
         <div id="siteStartUp">
         <h1 style="width:7.75%; text-align:center;text-shadow:0 2px rgb(182, 61, 238)">Sent <img style='animation-delay:7s;position:relative;width:7.5vw;height:6vw;'src="./customPhotos/mailsent.png" alt="loading logo"></h1>
 
@@ -270,7 +270,7 @@
             <h3><span class="quotetxt" style='text-align: center;'></span></h3>
             <br><h4><span class="quoteAuth" style='text-align: center;'></span></h4> <span class="purple keyword"></span>
         </div>
-    <?php } ?> -->
+    <?php } ?>
 
 
     <script src="./reanimateShip.js"></script>

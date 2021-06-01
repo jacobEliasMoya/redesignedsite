@@ -67,7 +67,7 @@ body {
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  background-image: url("./customPhotos/mainbkrnd.png");
+  background-image: url("../customPhotos/mainbkrnd.png");
   overflow: visible;
   position: relative;
 }
@@ -956,7 +956,7 @@ body .outWrap .wrapper #followWrapper3 .lightbox embed {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-bottom: 5vw solid rgba(157, 39, 212, 0.322) !important;
-  background: url("./customPhotos/loading.gif");
+  background: url("../customPhotos/loading.gif");
   background-size: 4rem 3.75rem;
   background-color: black;
   background-repeat: no-repeat;
@@ -1289,9 +1289,7 @@ body .outWrap .wrapper #followWrapper5 .row {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: center;
 }
 
 body .outWrap .wrapper #followWrapper5 .row * {
@@ -1305,8 +1303,8 @@ body .outWrap .wrapper #followWrapper5 .row p {
   background-color: rgba(24, 4, 44, 0.558);
   -webkit-box-shadow: inset 0 0 .5rem pink;
           box-shadow: inset 0 0 .5rem pink;
-  margin-top: 2rem;
   width: 35%;
+  margin-bottom: 3vw;
 }
 
 body .outWrap .wrapper #followWrapper5 .row .mainform {
@@ -1426,7 +1424,7 @@ body .outWrap .wrapper.gametime {
 
 body .outWrap .wrapper.gametime header {
   position: relative;
-  background-image: url("./customPhotos/mainbkrnd2bh.png");
+  background-image: url("../customPhotos/mainbkrnd2bh.png");
   background-size: cover;
 }
 
@@ -1624,7 +1622,7 @@ body .outWrap .wrapper.gametime header .lightbox div, body .outWrap .wrapper.gam
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-bottom: 5vw solid rgba(157, 39, 212, 0.322) !important;
-  background: url("./customPhotos/babyearth.png");
+  background: url("../customPhotos/babyearth.png");
   background-size: 4rem 3.75rem;
   background-color: black;
   background-repeat: no-repeat;
@@ -2004,6 +2002,11 @@ body #siteStartUp h4 {
     font-size: 3vw;
     border-radius: 0rem !important;
     line-height: 1.25;
+  }
+  #followWrapper5 {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   #followWrapper5 h2 {
     padding-top: 6.5vw !important;

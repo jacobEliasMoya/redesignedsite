@@ -1,18 +1,13 @@
 let lightboxObj = {
+
     lightbox:document.querySelector('.lightbox'),
     lightboxEmbed:document.querySelector('.lightbox embed'),
-    // lightboxEmbed1:document.querySelector('.lightbox embed'),
-    // lightboxEmbed2:document.querySelector('.lightbox embed'),
-    // lightboxEmbed3:document.querySelector('.lightbox embed'),
-    // lightboxEmbed4:document.querySelector('.lightbox embed'),
-
     closeMe:document.querySelector('.closeButton'),
 
     displayBox(){
         this.lightbox.style.display='block';
         this.lightboxEmbed.style.display='block';
     },
-
 
     growSize(){
         this.lightbox.style.opacity='1';
@@ -121,20 +116,15 @@ let jellySHOOT = {
 
     collisionDetection(projectile,targetObj){
         // horizontal check
-
         let chx = 0;
-
         if(projectile.getBoundingClientRect().right > targetObj.getBoundingClientRect().left && projectile.getBoundingClientRect().left < targetObj.getBoundingClientRect().right){
             chx++;
         } 
-
         if(projectile.getBoundingClientRect().top > targetObj.getBoundingClientRect().top && projectile.getBoundingClientRect().bottom < targetObj.getBoundingClientRect().bottom ){
             chx++;
         } 
-
         if(chx===2){
             targetObj.style.color='lime';
-
             setTimeout(function(){ 
                 targetObj.style.textShadow='';
 
@@ -143,8 +133,6 @@ let jellySHOOT = {
 
             return true;
             
-
- 
         } else {
             targetObj.style.borderRadius='';
             return false;
@@ -169,23 +157,6 @@ let jellySHOOT = {
             break
 
         }
-    },
-
-    aboutmeText(elm){
-
-        // setTimeout(() => {
-            
-        // }, 10);
-
-        // if(elm.classList.contains("onet")){
-
-        // } else if(elm.classList.contains("twot")){
-            
-        // } else if(elm.classList.contains("threet")){
-            
-        // } else if(elm.classList.contains("fourt")){
-            
-        // }
     },
 
     shootObj(element,potentialTarget ){
@@ -317,10 +288,10 @@ let jellySHOOT = {
                     setTimeout(function(){
 
                         if(window.innerWidth<1000){
-                            let path1='https://varep.net/newfront';
-                            let path2='https://jacobmoya.com/projects/revisedwebsitebackup/index.html';
+                            let path1='https://varep.net/';
+                            let path2='https://jacobmoya.netlify.app';
                             let path3='https://jacobmoya.com/projects/mancalajs/index.html';
-                            let path4='https://jacobmoya.com/projects/photodesignsite/index.html';
+                            let path4='https://varep.net/policyconference';
                             let path5='https://jacobmoya.com/gametime.html';
     
     
@@ -340,22 +311,37 @@ let jellySHOOT = {
                             lightboxObj.growSize();
                             img.style.transform = '';
                             let path1='https://varep.net/';
-                            let path2='https://jacobmoya.com/projects/revisedwebsitebackup/index.html';
+                            let path2='https://jacobmoya.netlify.app';
                             let path3='https://jacobmoya.com/projects/mancalajs/index.html';
-                            let path4='https://jacobmoya.com/projects/photodesignsite/index.html';
+                            let path4='https://varep.net/policyconference';
                             let path5='https://jacobmoya.com/gametime.html';
     
     
                             if(img.classList.contains('wordpress_site')){
-                                lightboxObj.lightboxEmbed.src=path1;
+                                lightboxObj.lightboxEmbed.src='';
+                                setTimeout(() => {
+                                    lightboxObj.lightboxEmbed.src=path1;
+                                }, 100);
                             } else if(img.classList.contains('mach2')){
-                                lightboxObj.lightboxEmbed.src=path2;
+                                lightboxObj.lightboxEmbed.src='';
+                                setTimeout(() => {
+                                    lightboxObj.lightboxEmbed.src=path2;
+                                }, 100);
                             } else if(img.classList.contains('mancala')){
-                                lightboxObj.lightboxEmbed.src=path3;
+                                lightboxObj.lightboxEmbed.src='';
+                                setTimeout(() => {
+                                    lightboxObj.lightboxEmbed.src=path3;
+                                }, 100);
                             } else if(img.classList.contains('photo')){
+                                lightboxObj.lightboxEmbed.src='';
+                                setTimeout(() => {
+                                    lightboxObj.lightboxEmbed.src='';
+                                }, 100);
                                 lightboxObj.lightboxEmbed.src=path4;
                             } else{
-                                lightboxObj.lightboxEmbed.src=path5;
+                                setTimeout(() => {
+                                    lightboxObj.lightboxEmbed.src=path5;
+                                }, 100);
                             }
                             let allas = document.querySelectorAll('.previews a' );
                             allas.forEach(as=>{
@@ -376,19 +362,14 @@ let jellySHOOT = {
 
 }
 
-
 let counter2 = 0;
-
-// 
-
 
 document.addEventListener('mouseup', function(e) {
     if (!lightboxObj.lightboxEmbed.contains(e.target)) {
         lightboxObj.closeLightBox();
         lightboxObj.lightboxEmbed.src='null';
     }
-  });
-
+});
 
 window.addEventListener('load',(e)=>{
     jellySHOOT.getAxisXnY(e);
@@ -405,9 +386,6 @@ jellySHOOT.jellyHome.addEventListener('click',(e)=>{
 
     if(window.innerWidth>1){
         jellySHOOT.shootObj(jellySHOOT.bullet,jellySHOOT.interactiveLogo);
-
-
-
     } else {
         return;
     }
@@ -415,18 +393,17 @@ jellySHOOT.jellyHome.addEventListener('click',(e)=>{
     jellySHOOT.bullet.style.display='block';
     jellySHOOT.bullet.style.zIndex='150';
 
-
 })
 
 jellySHOOT.previewAbouts.forEach(prev=>{
     prev.addEventListener('mouseover',()=>{
-            prev.style.transition='all ease-out .25s';
-            prev.style.transform='rotateY(180deg)';
-            setTimeout(() => {
-            prev.style.transform='rotateY(0deg)';
-                
-            }, 250);
-        })
+        prev.style.transition='all ease-out .25s';
+        prev.style.transform='rotateY(180deg)';
+        setTimeout(() => {
+        prev.style.transform='rotateY(0deg)';
+            
+        }, 250);
+    })
 })
 
 
