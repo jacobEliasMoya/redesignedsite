@@ -1840,6 +1840,15 @@ body #siteStartUp h4 {
 }
 
 @media screen and (max-width: 500px) {
+  .asteroids.two.targetShot {
+    width: 10% !important;
+  }
+  .mars {
+    width: 80% !important;
+  }
+  .moon_spin {
+    width: 60% !important;
+  }
   .responsivefontsizeP.main {
     width: 90% !important;
   }
@@ -1882,7 +1891,7 @@ body #siteStartUp h4 {
             animation: none !important;
   }
   header .world {
-    left: -12% !important;
+    left: -70% !important;
   }
   header .worldClouds {
     left: -5% !important;
@@ -1909,7 +1918,7 @@ body #siteStartUp h4 {
             justify-content: space-evenly !important;
   }
   #followWrapper4 .planet_jupiter {
-    width: 100% !important;
+    width: 90% !important;
   }
   #followWrapper4 h1 {
     margin-top: -1.5vw !important;
@@ -2133,15 +2142,17 @@ body #siteStartUp h4 {
   }
   #followWrapper4 ol {
     width: 40% !important;
+    margin-bottom: 0vw !important;
   }
   #followWrapper4 ol li {
     margin: 0% 0% !important;
+    padding: 0rem !important;
   }
   #followWrapper4 ol li a {
     font-size: 2vw !important;
   }
   #followWrapper4 ol li a img {
-    width: 15vw !important;
+    width: 23vw !important;
   }
   #followWrapper2 ul li {
     display: -webkit-box;
@@ -2193,6 +2204,34 @@ body #siteStartUp h4 {
   }
   .creativePiece {
     line-height: 1 !important;
+  }
+  .outWrap {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    width: 100vw !important;
+    height: auto !important;
+    -webkit-transform: none !important;
+            transform: none !important;
+    -webkit-transform-origin: none !important;
+            transform-origin: none !important;
+    overflow-x: scroll !important;
+    padding: none !important;
+    margin: none !important;
+    overflow-y: hidden !important;
+  }
+  .outWrap .wrapper {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: auto !important;
+    width: 100% !important;
+    -webkit-transform: none !important;
+            transform: none !important;
+    -webkit-transform-origin: none !important;
+            transform-origin: none !important;
   }
 }
 
