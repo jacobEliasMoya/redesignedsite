@@ -259,7 +259,7 @@
     </menu>
 
 
-    <?php if($issent) {?>
+    <!-- <?php if($issent) {?>
         <div id="siteStartUp">
         <h1 style="width:7.75%; text-align:center;text-shadow:0 2px rgb(182, 61, 238)">Sent <img style='animation-delay:7s;position:relative;width:7.5vw;height:6vw;'src="./customPhotos/mailsent.png" alt="loading logo"></h1>
 
@@ -270,7 +270,7 @@
             <h3><span class="quotetxt" style='text-align: center;'></span></h3>
             <br><h4><span class="quoteAuth" style='text-align: center;'></span></h4> <span class="purple keyword"></span>
         </div>
-    <?php } ?>
+    <?php } ?> -->
 
 
     <script src="./reanimateShip.js"></script>

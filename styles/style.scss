@@ -92,7 +92,7 @@ user-select: none;
 body{
 // DONT TOUCH
     width: auto;
-    height: auto;
+    height: 100vh;
     background: none;
     @include parralax();
     background-image: url('../customPhotos/mainbkrnd.png');
@@ -935,6 +935,7 @@ body{
                             border-radius:.5rem ;
                             box-shadow: inset 0 0 .5rem pink;
                             user-select: initial !important;
+                            padding: .75vw !important;
                             &::placeholder{
                                 transition: all ease .25s;
                                 font-size: .75vw;

@@ -61,7 +61,7 @@ html {
 
 body {
   width: auto;
-  height: auto;
+  height: 100vh;
   background: none;
   background-attachment: fixed;
   background-position: left top;
@@ -1347,6 +1347,7 @@ body .outWrap .wrapper #followWrapper5 .row .mainform input, body .outWrap .wrap
      -moz-user-select: initial !important;
       -ms-user-select: initial !important;
           user-select: initial !important;
+  padding: .75vw !important;
 }
 
 body .outWrap .wrapper #followWrapper5 .row .mainform input::-webkit-input-placeholder, body .outWrap .wrapper #followWrapper5 .row .mainform textarea::-webkit-input-placeholder {
