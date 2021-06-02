@@ -52,7 +52,7 @@
                 <div class="row" id="responsiveflexcol">
                     <p class="responsivefontsizeP" ><span class="bulletShot">N</span><span class="bulletShot">o</span><span class="bulletShot">w</span> <span class="bulletShot">I</span> <span style='color:lime;'>professionally</span> <span class="bulletShot">e</span><span class="bulletShot">n</span><span class="bulletShot">g</span><span class="bulletShot">i</span><span class="bulletShot">n</span><span class="bulletShot">e</span><span class="bulletShot">e</span><span class="bulletShot">r</span> <span class="bulletShot">s</span><span class="bulletShot">t</span><span class="bulletShot">u</span><span class="bulletShot">n</span><span class="bulletShot">n</span><span class="bulletShot">i</span><span class="bulletShot">n</span><span class="bulletShot">g</span><span class="bulletShot">,</span> <span class="bulletShot">f</span><span class="bulletShot">u</span><span class="bulletShot">l</span><span class="bulletShot">l</span><span class="bulletShot">y</span> <span style='color:lime;'>responsive,</span> <span class="bulletShot">&</span> <span class="bulletShot">i</span><span class="bulletShot">n</span><span class="bulletShot">t</span><span class="bulletShot">e</span><span class="bulletShot">r</span><span class="bulletShot">a</span><span class="bulletShot">c</span><span class="bulletShot">t</span><span class="bulletShot">i</span><span class="bulletShot">v</span><span class="bulletShot">e</span> <span class="bulletShot">w</span><span class="bulletShot">e</span><span class="bulletShot">b</span><span class="bulletShot">s</span><span class="bulletShot">i</span><span class="bulletShot">t</span><span class="bulletShot">e</span><span class="bulletShot">s</span> <span class="bulletShot">a</span><span class="bulletShot">c</span><span class="bulletShot">r</span><span class="bulletShot">o</span><span class="bulletShot">s</span><span class="bulletShot">s</span> <span style='color:lime;'>all browsers</span><span class="bulletShot">!</span> </p>
                     <p class="mp responsivefontsizeP" id="grabberfix"><span class="bulletShot">I</span> <span style='color:lime;'>love</span> <span class="bulletShot">t</span><span class="bulletShot">o</span> <span class="bulletShot">u</span><span class="bulletShot">s</span><span class="bulletShot">e</span> <span class="bulletShot">a</span><span class="bulletShot">l</span><span class="bulletShot">l</span> <span class="bulletShot">w</span><span class="bulletShot">e</span><span class="bulletShot">b</span> <span class="bulletShot">t</span><span class="bulletShot">e</span><span class="bulletShot">c</span><span class="bulletShot">h</span><span class="bulletShot">n</span><span class="bulletShot">o</span><span class="bulletShot">l</span><span class="bulletShot">o</span><span class="bulletShot">g</span><span class="bulletShot">i</span><span class="bulletShot">e</span><span class="bulletShot">s</span> <span class="bulletShot">&</span> <span class="bulletShot">a</span><span class="bulletShot">m</span> <span class="bulletShot">o</span><span class="bulletShot">p</span><span class="bulletShot">e</span><span class="bulletShot">n</span> <span class="bulletShot">t</span><span class="bulletShot">o</span> <span style='color:lime;'>learning,</span> <span class="bulletShot">I</span> <span class="bulletShot">e</span><span class="bulletShot">n</span><span class="bulletShot">j</span><span class="bulletShot">o</span><span class="bulletShot">y</span> <span class="bulletShot">a</span> <span class="bulletShot">c</span><span class="bulletShot">h</span><span class="bulletShot">a</span><span class="bulletShot">l</span><span class="bulletShot">l</span><span class="bulletShot">e</span><span class="bulletShot">n</span><span class="bulletShot">g</span><span class="bulletShot">e</span><span class="bulletShot">!</span>
-                        <br><br><span class="bulletShot">P</span><span class="bulletShot">l</span><span class="bulletShot">e</span><span class="bulletShot">a</span><span class="bulletShot">s</span><span class="bulletShot">e</span> <span class="bulletShot">c</span><span class="bulletShot">h</span><span class="bulletShot">e</span><span class="bulletShot">c</span><span class="bulletShot">k</span> <span class="bulletShot">o</span><span class="bulletShot">u</span><span class="bulletShot">t</span> <span class="bulletShot">t</span><span class="bulletShot">h</span><span class="bulletShot">e</span> <span style='color:lime;'>technologies</span> <span class="bulletShot">I</span> <span class="bulletShot">u</span><span class="bulletShot">s</span><span class="bulletShot">e</span><span class="bulletShot">!</span> <br>
+                        <br class="non_display_break"><br class="non_display_break"><br class="non_display_break"><br class="non_display_break"><br class="non_display_break"><br><br><span class="bulletShot">P</span><span class="bulletShot">l</span><span class="bulletShot">e</span><span class="bulletShot">a</span><span class="bulletShot">s</span><span class="bulletShot">e</span> <span class="bulletShot">c</span><span class="bulletShot">h</span><span class="bulletShot">e</span><span class="bulletShot">c</span><span class="bulletShot">k</span> <span class="bulletShot">o</span><span class="bulletShot">u</span><span class="bulletShot">t</span> <span class="bulletShot">t</span><span class="bulletShot">h</span><span class="bulletShot">e</span> <span style='color:lime;'>technologies</span> <span class="bulletShot">I</span> <span class="bulletShot">u</span><span class="bulletShot">s</span><span class="bulletShot">e</span><span class="bulletShot">!</span> <br>
                     </p>
 
                 </div>
@@ -109,10 +109,10 @@
 
                 </div>
                 <ol id="responsiveflexcol2">   
-                    <li class="onet aboutpreview responsivefontsizeP" style='animation-delay: 0s;margin-left: 5vw;' ><a href="#"><img class="one" src="./customPhotos/family.png" alt="">Family</a></li>
-                    <li class="twot aboutpreview responsivefontsizeP" style='animation-delay: -5s;margin-left: 5vw;'><a href="#"><img class="two" src="./customPhotos/guitar.png" alt="">Music</a></li>
-                    <li class="threet aboutpreview responsivefontsizeP" style='animation-delay: -10s;margin-left: 5vw;'><a href="#"><img class="three" src="./customPhotos/laptop.png" alt="">Technology</a></li>
-                    <li class="fourt aboutpreview responsivefontsizeP" style='animation-delay: -15s;margin-left: 5vw;'><a href="#"><img class="four" src="./customPhotos/fishing.png" alt="">Fishing</a></li>
+                    <li class="onet aboutpreview responsivefontsizeP" style='animation-delay: 0s;margin-left: 5vw;' ><a><img class="one" src="./customPhotos/family.png" alt="">Family</a></li>
+                    <li class="twot aboutpreview responsivefontsizeP" style='animation-delay: -5s;margin-left: 5vw;'><a><img class="two" src="./customPhotos/guitar.png" alt="">Music</a></li>
+                    <li class="threet aboutpreview responsivefontsizeP" style='animation-delay: -10s;margin-left: 5vw;'><a><img class="three" src="./customPhotos/laptop.png" alt="">Technology</a></li>
+                    <li class="fourt aboutpreview responsivefontsizeP" style='animation-delay: -15s;margin-left: 5vw;'><a><img class="four" src="./customPhotos/fishing.png" alt="">Fishing</a></li>
 
                 </ol>
                 <img class='planet_jupiter' src="./customPhotos/jupiterbkrnd.png" alt="planet_jupiter">
@@ -126,7 +126,7 @@
                 <img class="sat ring"style='margin-top:-9vw' src="./customPhotos/upperringshalf.png" alt="">
                 <img class="sat" src="./customPhotos/saturninside.png" alt="">
                 <img class="sat ring" style='margin-top:-9.05vw' src="./customPhotos/lowerringshalf.png" alt="">
-                <h2>There are many <span style='color:lime;'>rings.on<span style='color:gold !important;'>(<span style='color:lime'>"Saturn"</span>);</span></span></h2>
+                <h2>There are many <span style='color:lime;'>rings.on <span style='color:gold !important;'>(<span style='color:lime'>"Saturn"</span>);</span></span></h2>
                 <div class="row " id="responsiveflexcol">
                     <p class='contactdescr responsivefontsizeP' style="padding: 1rem;border-radius: 1rem;">Send me a message or give me a <span style='color:lime'>ring<span style='color:gold !important;'>.</span>at <span style='color:gold !important;'>(<span style='color:lime' class="phonenum">"909-644-6073"</span>)</span></span> if you want to work with me! I will get back to you within one day,thank you & I look forward to speaking with you!</p>
                    
@@ -206,11 +206,7 @@
 
                                 } else {
                                     $message = test_input($_POST["message"]);
-                                    if (!preg_match("/^[a-zA-Z-' ]*$/",$message)) {
-                                        $messageerr = "Only letters and white space allowed";
-                                        $sendablemailer = false;
 
-                                    }
                                 }
 
                                 if($sendablemailer){
@@ -249,11 +245,11 @@
     
     <menu>
         <ul class="mainUL">
-            <li class="homeButton"><a href="#followWrapper">Home</a></li>
-            <li class="experienceButton"><a href="#followWrapper2">Experience</a></li>
-            <li class="portfolioButton"><a href="#followWrapper3">Portfolio</a></li>
-            <li class="aboutButton"><a href="#followWrapper4">About</a></li>
-            <li class="contactButton"><a href="#followWrapper5">Contact</a></li>
+            <li class="homeButton"><a href="#followWrapper"><span class="non_mobile_display">Home</span> <i class="non_display_break fa fa-home"></i></a></li>
+            <li class="experienceButton"><a href="#followWrapper2"><span class="non_mobile_display">Experience</span><i class="non_display_break fa fa-laptop-code"></i></a></li>
+            <li class="portfolioButton"><a href="#followWrapper3"><span class="non_mobile_display">Portfolio</span><i class="non_display_break fa fa-briefcase"></i></a></li>
+            <li class="aboutButton"><a href="#followWrapper4"><span class="non_mobile_display">About</span><i class="non_display_break fa fa-question"></i></a></li>
+            <li class="contactButton"><a href="#followWrapper5"><span class="non_mobile_display">Contact</span><i class="non_display_break fa fa-phone"></i></a></li>
             <li class="paddingfx"><a class="coin" href="/gametime.html" style='color: rgba(128, 0, 128, 0);'><img src="./customPhotos/coin.png" alt="">_</a></li>
         </ul>
     </menu>

@@ -59,6 +59,10 @@ html {
   color: #561176 !important;
 }
 
+.non_display_break {
+  display: none;
+}
+
 body {
   width: auto;
   height: 100vh;
@@ -66,8 +70,8 @@ body {
   background-attachment: fixed;
   background-position: left top;
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  background-image: url("../customPhotos/mainbkrnd.png");
+  background-size: cover;
+  background-image: url("../customPhotos/mainbkrnd2.webp");
   overflow: visible;
   position: relative;
 }
@@ -128,7 +132,7 @@ body menu .mainUL li {
   min-width: 10%;
   width: auto;
   color: black;
-  font-size: 1.25vw !important;
+  font-size: 1.25vw;
   cursor: pointer;
   color: white;
   border-bottom-right-radius: .5rem;
@@ -147,6 +151,10 @@ body menu .mainUL li:hover a {
   color: lime;
   padding-top: 2.5vw !important;
   padding-bottom: 1.25vw;
+}
+
+body menu .mainUL li:hover a span, body menu .mainUL li:hover a i {
+  color: lime;
 }
 
 body menu .mainUL li a {
@@ -172,6 +180,12 @@ body menu .mainUL li a {
 body menu .mainUL li a img {
   margin-top: .6vw;
   width: 35%;
+}
+
+body menu .mainUL li a i {
+  display: none;
+  font-size: 6vw !important;
+  padding: 1vw 2vw;
 }
 
 body menu .mainUL li .coin {
@@ -566,8 +580,8 @@ body .outWrap .wrapper header .f1 {
           animation-iteration-count: infinite;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-name: flameEff !important;
-          animation-name: flameEff !important;
+  -webkit-animation-name: flameEff;
+          animation-name: flameEff;
   -webkit-animation-duration: .75s !important;
           animation-duration: .75s !important;
   animation-iteration-count: infinite !important;
@@ -589,8 +603,8 @@ body .outWrap .wrapper header .f2 {
           animation-iteration-count: infinite;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-name: flameEff2 !important;
-          animation-name: flameEff2 !important;
+  -webkit-animation-name: flameEff2;
+          animation-name: flameEff2;
   -webkit-animation-duration: .75s !important;
           animation-duration: .75s !important;
   animation-iteration-count: infinite !important;
@@ -616,7 +630,7 @@ body .outWrap .wrapper section {
   background-attachment: fixed;
   background-position: left top;
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+  background-size: cover;
   scroll-behavior: smooth;
   position: relative;
 }
@@ -1841,6 +1855,7 @@ body #siteStartUp h4 {
 
 @media screen and (max-width: 500px) {
   .asteroids.two.targetShot {
+    display: none !important;
     width: 10% !important;
   }
   .mars {
@@ -1853,6 +1868,16 @@ body #siteStartUp h4 {
     width: 90% !important;
   }
   menu {
+    z-index: 99 !important;
+    position: fixed !important;
+    top: 0 !important;
+    border-radius: 1rem !important;
+  }
+  menu .mainUL li {
+    background: rgba(157, 39, 212, 0.404) !important;
+    font-size: 4vw !important;
+  }
+  menu .mainUL .paddingfx {
     display: none !important;
   }
   header {
@@ -1891,6 +1916,8 @@ body #siteStartUp h4 {
             animation: none !important;
   }
   header .world {
+    -webkit-animation-name: none !important;
+            animation-name: none !important;
     left: -70% !important;
   }
   header .worldClouds {
@@ -2002,7 +2029,7 @@ body #siteStartUp h4 {
     margin-bottom: 5vw !important;
   }
   #responsiveflexcol li, #responsiveflexcol .creativePiece, #responsiveflexcol .creativePiece {
-    width: 93.75% !important;
+    width: 93.75%;
     text-align: center;
     border-radius: 0rem !important;
     line-height: 1.25;
@@ -2023,7 +2050,7 @@ body #siteStartUp h4 {
     width: 71% !important;
     text-align: center;
     margin-top: 1vw !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 0rem !important;
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
@@ -2033,7 +2060,6 @@ body #siteStartUp h4 {
   }
   #responsiveflexcol form input, #responsiveflexcol form textarea {
     width: 100% !important;
-    border-radius: 0rem !important;
   }
   .row {
     margin-bottom: 0vw !important;
@@ -2154,6 +2180,10 @@ body #siteStartUp h4 {
   #followWrapper4 ol li a img {
     width: 23vw !important;
   }
+  #followWrapper4 .row {
+    margin: 0vw 0vw !important;
+    margin-top: -8vw !important;
+  }
   #followWrapper2 ul li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2170,12 +2200,13 @@ body #siteStartUp h4 {
             flex-direction: row;
     padding: .5rem !important;
   }
-  .responsivefontsizeP:not(.exclude) {
+  .responsivefontsizeP {
     background-color: rgba(24, 4, 44, 0) !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
   .gitlink {
+    display: none !important;
     margin-top: 15vw !important;
   }
   .gitlink img {
@@ -2232,6 +2263,22 @@ body #siteStartUp h4 {
             transform: none !important;
     -webkit-transform-origin: none !important;
             transform-origin: none !important;
+  }
+  .arrowOne, .arrowTwo, .arrowThree {
+    display: none !important;
+  }
+  .exclude {
+    border-bottom: .25rem solid #9D27D4;
+    width: 50% !important;
+  }
+  .non_display_break {
+    display: block !important;
+  }
+  .non_mobile_display {
+    display: none !important;
+  }
+  .worldClouds {
+    width: 75% !important;
   }
 }
 

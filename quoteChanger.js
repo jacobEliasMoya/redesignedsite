@@ -11,7 +11,6 @@ let quoteChange = {
         //need to set the inner html(x) of both nodes(x) to the same index(x) between 2 arrays(x)
         this.txtNode.innerHTML = this.quoteText[randomNum];
         this.quoteNode.innerHTML = this.quoteAuth[randomNum];
-
     }
 
 }

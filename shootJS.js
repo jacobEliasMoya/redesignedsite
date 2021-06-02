@@ -264,15 +264,11 @@ let jellySHOOT = {
                 }, 1000);
 
             };
-
             
             this.bulletShot.forEach(shot=>{
                 if(this.collisionDetection(element,shot)){
                 };
             })
-
-
-
 
             this.previewImgs.forEach(img=>{
                 if(this.collisionDetection(element,img)){
@@ -384,7 +380,7 @@ jellySHOOT.jellyHome.addEventListener('click',(e)=>{
     jellySHOOT.getAxisXnY(e);
     jellySHOOT.setCursorPosition(jellySHOOT.bullet);
 
-    if(window.innerWidth>1){
+    if(window.innerWidth){
         jellySHOOT.shootObj(jellySHOOT.bullet,jellySHOOT.interactiveLogo);
     } else {
         return;

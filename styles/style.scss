@@ -1,11 +1,8 @@
 //do not tinker with layout jacob, this is your conscience speaking, 
 // you finally fixed it!!! dont touch
-
 html {
     scroll-behavior: smooth !important;
 }
-
-
 
 // DONT TOUCH
 @mixin flexCol {
@@ -26,7 +23,7 @@ html {
     background-attachment: fixed;
     background-position: left top;
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
 }
 // DONT TOUCH
 @mixin fullScreener {
@@ -88,6 +85,10 @@ user-select: none;
     color: rgb(86, 17, 118) !important;
 }
 
+.non_display_break{
+    display: none;
+}
+
 // DONT TOUCH
 body{
 // DONT TOUCH
@@ -95,7 +96,7 @@ body{
     height: 100vh;
     background: none;
     @include parralax();
-    background-image: url('../customPhotos/mainbkrnd.png');
+    background-image: url('../customPhotos/mainbkrnd2.webp');
     overflow: visible;
     position: relative;
     // DONT TOUCH
@@ -128,7 +129,7 @@ body{
                 min-width: 10%;
                 width: auto;
                 color: black;
-                font-size: 1.25vw !important;
+                font-size: 1.25vw;
                 cursor: pointer;
                 color: white;
                 border-bottom-right-radius: .5rem;
@@ -144,6 +145,9 @@ body{
                         color: lime;
                         padding-top: 2.5vw !important;
                         padding-bottom: 1.25vw;
+                        span,i{
+                            color: lime;
+                        }
                     }
                 }
                 a{
@@ -156,6 +160,11 @@ body{
                         
                         margin-top: .6vw;
                         width: 35%;
+                    }
+                    i{
+                        display: none;
+                        font-size: 6vw !important;
+                        padding: 1vw 2vw;
                     }
                 }
 
@@ -418,7 +427,7 @@ body{
                     transition: all ease-out .1s; 
                     z-index: 6;
                     @include animationInfo();
-                    animation-name: flameEff !important;
+                    animation-name: flameEff ;
                     animation-duration: .75s !important;
                     animation-iteration-count: infinite !important;
                     margin-top: .25%;
@@ -436,7 +445,7 @@ body{
                     transition: all ease-out .1s; 
                     z-index: 6;
                     @include animationInfo();
-                    animation-name: flameEff2 !important;
+                    animation-name: flameEff2 ;
                     animation-duration: .75s !important;
                     animation-iteration-count: infinite !important;
                     margin-top: .25%;
@@ -1283,6 +1292,8 @@ body{
 @media screen and (max-width: 500px) {
 
     .asteroids.two.targetShot{
+        display: none !important;
+    
         width: 10% !important;
     }
 
@@ -1298,7 +1309,19 @@ body{
         width: 90% !important;
     }
     menu{
-        display: none !important;
+        z-index: 99 !important;
+        position: fixed !important;
+        top: 0 !important;
+        border-radius: 1rem !important;
+        .mainUL{
+            li{
+                background:rgba(157, 39, 212, 0.404) !important;
+                font-size: 4vw !important;
+            }
+            .paddingfx{
+                display: none !important;
+            }
+        }
     }
     header{
         justify-content: space-between;
@@ -1332,6 +1355,7 @@ body{
             animation: none !important;
         }
         .world{
+            animation-name: none !important;
             left: -70% !important;
         }
         .worldClouds{
@@ -1422,7 +1446,7 @@ body{
 
         }
         li,.creativePiece,.creativePiece {
-            width: 93.75% !important;
+            width: 93.75%;
             text-align: center;
             border-radius: 0rem !important;
             line-height: 1.25;
@@ -1449,7 +1473,7 @@ body{
             width: 71% !important;
             text-align: center;
             margin-top: 1vw !important;
-            margin-bottom: 1rem !important;
+            margin-bottom: 0rem !important;
             margin-left: 0px !important;
             margin-right: 0px !important;
 
@@ -1460,7 +1484,6 @@ body{
             width: 71% !important;
             input,textarea{
                 width: 100% !important;
-                border-radius: 0rem !important;
 
             }
         }
@@ -1589,6 +1612,10 @@ body{
                 }
             }
         }
+        .row{
+            margin: 0vw 0vw !important;
+            margin-top: -8vw !important;
+        }
     }
 
     #followWrapper2{
@@ -1600,12 +1627,13 @@ body{
         }
     }
 
-    .responsivefontsizeP:not(.exclude){
+    .responsivefontsizeP{
         background-color: rgba(24, 4, 44, 0) !important;
         box-shadow: none !important;
     }
 
     .gitlink{
+        display: none !important;
         margin-top: 15vw !important;
         img{
             width: 200% !important;
@@ -1659,16 +1687,49 @@ body{
         padding: none !important;
         margin: none !important;
         overflow-y: hidden !important;
+
         .wrapper{
             flex-direction: column !important;
             height: auto !important;
             width: 100% !important;
             transform: none !important;
             transform-origin: none !important;
+    
         }
     }
 
-    
+    //not using this code for now, unstable on IOS     
+    // #spaceX{
+    //     height: 4rem !important;
+    //     width: 5.75rem !important;
+    // }
+
+    // .f1,.f2{
+    //     height: 4rem !important;
+    //     width: 5rem !important;
+    // }
+
+    .arrowOne,.arrowTwo,.arrowThree{
+        display: none !important;
+    }
+
+    .exclude{
+        border-bottom: .25rem solid #9D27D4;
+        width: 50% !important;
+
+    }
+
+    .non_display_break{
+        display: block !important;
+    }
+
+    .non_mobile_display{
+        display: none !important;
+    }
+
+    .worldClouds{
+        width: 75% !important;
+    }
 
 }
 
